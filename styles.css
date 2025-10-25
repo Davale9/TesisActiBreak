@@ -1,18 +1,3 @@
-h1 {
-    font-size: 4em;
-    font-family: "Exo 2", sans-serif;
-    font-style: italic;
-    font-weight: 900;
-    background: linear-gradient(to right, #00E5FF, #7A5CFF 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    align-self: center;
-    line-height: 0.8;
-}
-
 h2 {
     font-size: 2em;
     font-family: "Nunito Sans", sans-serif;
@@ -62,7 +47,7 @@ div.header-parent {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 5%;
+    gap: 10%;
     justify-content: center;
 }
 
@@ -91,7 +76,7 @@ div.header-icon > img {
 
 a.header-name {
     justify-content: center;
-    width: 25%;
+    width: 400px;
 }
 
 div.header-name {
@@ -99,9 +84,14 @@ div.header-name {
     justify-content: center;
 }
 
+div.header-name > img{
+    width: 100%;
+    justify-content: center;
+}
+
+
 a.header-history {
-    width: 15%;
-    max-width: 222px;
+    width: 222px;
     height: 75px;
 }
 
@@ -118,4 +108,114 @@ div.header-history {
 div.header-history > img {
     width: 30%;
     height: auto;
+}
+
+@media (max-width: 1000px) {
+    div.header-parent {
+        gap: 5%;
+    }
+
+    a.header-icon {
+        width: 90px;
+        height: 100%;
+        justify-self: center;
+        align-items: center;
+    }
+
+    div.header-icon {
+        justify-content: right;
+        justify-self: center;
+        width: 90px;
+        align-items: center;
+        align-self: center;
+    }
+
+    div.header-icon > img { 
+        width: 90px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    a.header-name {
+        justify-content: center;
+        width: 350px;
+    }
+
+    a.header-history {
+        width: 75px;
+        height: 75px;
+    }
+    
+    div.header-history {
+        width: 75px;
+        height: 75px;
+    }
+
+    div.header-history > img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    div.header-history > h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 75px;
+    }
+
+    div.header-parent {
+        gap: 5%;
+        height: 75px;
+    }
+
+    a.header-icon {
+        width: 50px;
+        height: 100%;
+        justify-self: center;
+        align-items: center;
+    }
+
+    div.header-icon {
+        justify-content: right;
+        justify-self: center;
+        width: 50px;
+        align-items: center;
+        align-self: center;
+    }
+
+    div.header-icon > img { 
+        width: 50px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    a.header-name {
+        justify-content: center;
+        width: 200px;
+    }
+
+    a.header-history {
+        width: 50px;
+        height: 50px;
+    }
+    
+    div.header-history {
+        width: 50px;
+        height: 50px;
+    }
+
+    div.header-history > img {
+        width: 80%;
+        height: auto;
+    }
+
+    div.header-history > h2 {
+        display: none;
+    }
 }
