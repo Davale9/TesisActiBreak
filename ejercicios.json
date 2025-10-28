@@ -6,18 +6,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/11B/Front.webm",
             "lateral": "Videos/Male/1 Baja/11B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/11B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/11B/Front.webm",
             "lateral": "Videos/Female/1 Baja/11B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/11B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/11B.mp3",
-        "audio female": "Audio/Female/1 Baja/11B.mp3"
+        "audioMale": "Audio/Male/1 Baja/11B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/11B.mp3"
     },
 
     {
@@ -27,18 +27,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/12B/Front.webm",
             "lateral": "Videos/Male/1 Baja/12B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/12B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/12B/Front.webm",
             "lateral": "Videos/Female/1 Baja/12B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/12B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/12B.mp3",
-        "audio female": "Audio/Female/1 Baja/12B.mp3"
+        "audioMale": "Audio/Male/1 Baja/12B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/12B.mp3"
     },
 
     {
@@ -48,18 +48,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/15B/Front.webm",
             "lateral": "Videos/Male/1 Baja/15B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/15B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/15B/Front.webm",
             "lateral": "Videos/Female/1 Baja/15B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/15B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/15B.mp3",
-        "audio female": "Audio/Female/1 Baja/15B.mp3"
+        "audioMale": "Audio/Male/1 Baja/15B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/15B.mp3"
     },
 
     {
@@ -69,18 +69,18 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
             "lateral": "Videos/Male/1 Baja/21B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/21B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/21B/Front.webm",
             "lateral": "Videos/Female/1 Baja/21B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/21B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/21B.mp3",
-        "audio female": "Audio/Female/1 Baja/21B.mp3"
+        "audioMale": "Audio/Male/1 Baja/21B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/21B.mp3"
     },
 
     {
@@ -90,18 +90,18 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
             "lateral": "Videos/Male/1 Baja/21B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/21B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/21B/Front.webm",
             "lateral": "Videos/Female/1 Baja/21B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/21B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/21B.mp3",
-        "audio female": "Audio/Female/1 Baja/21B.mp3"
+        "audioMale": "Audio/Male/1 Baja/21B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/21B.mp3"
     },
 
     {
@@ -111,18 +111,18 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/23B/Front.webm",
             "lateral": "Videos/Male/1 Baja/23B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/23B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/23B/Front.webm",
             "lateral": "Videos/Female/1 Baja/23B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/23B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/23B.mp3",
-        "audio female": "Audio/Female/1 Baja/23B.mp3"
+        "audioMale": "Audio/Male/1 Baja/23B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/23B.mp3"
     },
 
     {
@@ -132,18 +132,18 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/24B/Front.webm",
             "lateral": "Videos/Male/1 Baja/24B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/24B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/24B/Front.webm",
             "lateral": "Videos/Female/1 Baja/24B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/24B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/24B.mp3",
-        "audio female": "Audio/Female/1 Baja/24B.mp3"
+        "audioMale": "Audio/Male/1 Baja/24B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/24B.mp3"
     },
 
     {
@@ -153,18 +153,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/31B/Front.webm",
             "lateral": "Videos/Male/1 Baja/31B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/31B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/31B/Front.webm",
             "lateral": "Videos/Female/1 Baja/31B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/31B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/31B.mp3",
-        "audio female": "Audio/Female/1 Baja/31B.mp3"
+        "audioMale": "Audio/Male/1 Baja/31B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/31B.mp3"
     },
 
     {
@@ -174,18 +174,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/33B/Front.webm",
             "lateral": "Videos/Male/1 Baja/33B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/33B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/33B/Front.webm",
             "lateral": "Videos/Female/1 Baja/33B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/33B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/33B.mp3",
-        "audio female": "Audio/Female/1 Baja/33B.mp3"
+        "audioMale": "Audio/Male/1 Baja/33B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/33B.mp3"
     },
 
     {
@@ -195,18 +195,18 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/1 Baja/35B/Front.webm",
             "lateral": "Videos/Male/1 Baja/35B/Side.webm",
             "diagonal": "Videos/Male/1 Baja/35B/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/1 Baja/35B/Front.webm",
             "lateral": "Videos/Female/1 Baja/35B/Side.webm",
             "diagonal": "Videos/Female/1 Baja/35B/Diagonal.webm"
         },
-        "audio male": "Audio/Male/1 Baja/35B.mp3",
-        "audio female": "Audio/Female/1 Baja/35B.mp3"
+        "audioMale": "Audio/Male/1 Baja/35B.mp3",
+        "audioFemale": "Audio/Female/1 Baja/35B.mp3"
     },
 
     {
@@ -216,18 +216,18 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/12M/Front.webm",
             "lateral": "Videos/Male/2 Media/12M/Side.webm",
             "diagonal": "Videos/Male/2 Media/12M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/12M/Front.webm",
             "lateral": "Videos/Female/2 Media/12M/Side.webm",
             "diagonal": "Videos/Female/2 Media/12M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/12M.mp3",
-        "audio female": "Audio/Female/2 Media/12M.mp3"
+        "audioMale": "Audio/Male/2 Media/12M.mp3",
+        "audioFemale": "Audio/Female/2 Media/12M.mp3"
     },
 
     {
@@ -237,18 +237,18 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/13M/Front.webm",
             "lateral": "Videos/Male/2 Media/13M/Side.webm",
             "diagonal": "Videos/Male/2 Media/13M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/13M/Front.webm",
             "lateral": "Videos/Female/2 Media/13M/Side.webm",
             "diagonal": "Videos/Female/2 Media/13M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/13M.mp3",
-        "audio female": "Audio/Female/2 Media/13M.mp3"
+        "audioMale": "Audio/Male/2 Media/13M.mp3",
+        "audioFemale": "Audio/Female/2 Media/13M.mp3"
     },
 
     {
@@ -258,18 +258,18 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/14M/Front.webm",
             "lateral": "Videos/Male/2 Media/14M/Side.webm",
             "diagonal": "Videos/Male/2 Media/14M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/14M/Front.webm",
             "lateral": "Videos/Female/2 Media/14M/Side.webm",
             "diagonal": "Videos/Female/2 Media/14M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/14M.mp3",
-        "audio female": "Audio/Female/2 Media/14M.mp3"
+        "audioMale": "Audio/Male/2 Media/14M.mp3",
+        "audioFemale": "Audio/Female/2 Media/14M.mp3"
     },
 
     {
@@ -279,18 +279,18 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/15M/Front.webm",
             "lateral": "Videos/Male/2 Media/15M/Side.webm",
             "diagonal": "Videos/Male/2 Media/15M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/15M/Front.webm",
             "lateral": "Videos/Female/2 Media/15M/Side.webm",
             "diagonal": "Videos/Female/2 Media/15M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/15M.mp3",
-        "audio female": "Audio/Female/2 Media/15M.mp3"
+        "audioMale": "Audio/Male/2 Media/15M.mp3",
+        "audioFemale": "Audio/Female/2 Media/15M.mp3"
     },
 
     {
@@ -300,18 +300,18 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/21M/Front.webm",
             "lateral": "Videos/Male/2 Media/21M/Side.webm",
             "diagonal": "Videos/Male/2 Media/21M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/21M/Front.webm",
             "lateral": "Videos/Female/2 Media/21M/Side.webm",
             "diagonal": "Videos/Female/2 Media/21M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/21M.mp3",
-        "audio female": "Audio/Female/2 Media/21M.mp3"
+        "audioMale": "Audio/Male/2 Media/21M.mp3",
+        "audioFemale": "Audio/Female/2 Media/21M.mp3"
     },
 
     {
@@ -321,18 +321,18 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/23M/Front.webm",
             "lateral": "Videos/Male/2 Media/23M/Side.webm",
             "diagonal": "Videos/Male/2 Media/23M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/23M/Front.webm",
             "lateral": "Videos/Female/2 Media/23M/Side.webm",
             "diagonal": "Videos/Female/2 Media/23M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/23M.mp3",
-        "audio female": "Audio/Female/2 Media/23M.mp3"
+        "audioMale": "Audio/Male/2 Media/23M.mp3",
+        "audioFemale": "Audio/Female/2 Media/23M.mp3"
     },
 
     {
@@ -342,18 +342,18 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/25M/Front.webm",
             "lateral": "Videos/Male/2 Media/25M/Side.webm",
             "diagonal": "Videos/Male/2 Media/25M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/25M/Front.webm",
             "lateral": "Videos/Female/2 Media/25M/Side.webm",
             "diagonal": "Videos/Female/2 Media/25M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/25M.mp3",
-        "audio female": "Audio/Female/2 Media/25M.mp3"
+        "audioMale": "Audio/Male/2 Media/25M.mp3",
+        "audioFemale": "Audio/Female/2 Media/25M.mp3"
     },
 
     {
@@ -363,18 +363,18 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/32M/Front.webm",
             "lateral": "Videos/Male/2 Media/32M/Side.webm",
             "diagonal": "Videos/Male/2 Media/32M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/32M/Front.webm",
             "lateral": "Videos/Female/2 Media/32M/Side.webm",
             "diagonal": "Videos/Female/2 Media/32M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/32M.mp3",
-        "audio female": "Audio/Female/2 Media/32M.mp3"
+        "audioMale": "Audio/Male/2 Media/32M.mp3",
+        "audioFemale": "Audio/Female/2 Media/32M.mp3"
     },
 
     {
@@ -384,18 +384,18 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/33M/Front.webm",
             "lateral": "Videos/Male/2 Media/33M/Side.webm",
             "diagonal": "Videos/Male/2 Media/33M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/33M/Front.webm",
             "lateral": "Videos/Female/2 Media/33M/Side.webm",
             "diagonal": "Videos/Female/2 Media/33M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/33M.mp3",
-        "audio female": "Audio/Female/2 Media/33M.mp3"
+        "audioMale": "Audio/Male/2 Media/33M.mp3",
+        "audioFemale": "Audio/Female/2 Media/33M.mp3"
     },
 
     {
@@ -405,18 +405,18 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/2 Media/35M/Front.webm",
             "lateral": "Videos/Male/2 Media/35M/Side.webm",
             "diagonal": "Videos/Male/2 Media/35M/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/2 Media/35M/Front.webm",
             "lateral": "Videos/Female/2 Media/35M/Side.webm",
             "diagonal": "Videos/Female/2 Media/35M/Diagonal.webm"
         },
-        "audio male": "Audio/Male/2 Media/35M.mp3",
-        "audio female": "Audio/Female/2 Media/35M.mp3"
+        "audioMale": "Audio/Male/2 Media/35M.mp3",
+        "audioFemale": "Audio/Female/2 Media/35M.mp3"
     },
 
     {
@@ -426,18 +426,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/11A/Front.webm",
             "lateral": "Videos/Male/3 Alta/11A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/11A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/11A/Front.webm",
             "lateral": "Videos/Female/3 Alta/11A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/11A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/11A.mp3",
-        "audio female": "Audio/Female/3 Alta/11A.mp3"
+        "audioMale": "Audio/Male/3 Alta/11A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/11A.mp3"
     },
 
     {
@@ -447,18 +447,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/12A/Front.webm",
             "lateral": "Videos/Male/3 Alta/12A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/12A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/12A/Front.webm",
             "lateral": "Videos/Female/3 Alta/12A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/12A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/12A.mp3",
-        "audio female": "Audio/Female/3 Alta/12A.mp3"
+        "audioMale": "Audio/Male/3 Alta/12A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/12A.mp3"
     },
 
     {
@@ -468,18 +468,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/15A/Front.webm",
             "lateral": "Videos/Male/3 Alta/15A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/15A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/15A/Front.webm",
             "lateral": "Videos/Female/3 Alta/15A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/15A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/15A.mp3",
-        "audio female": "Audio/Female/3 Alta/15A.mp3"
+        "audioMale": "Audio/Male/3 Alta/15A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/15A.mp3"
     },
 
     {
@@ -489,18 +489,18 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/21A/Front.webm",
             "lateral": "Videos/Male/3 Alta/21A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/21A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/21A/Front.webm",
             "lateral": "Videos/Female/3 Alta/21A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/21A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/21A.mp3",
-        "audio female": "Audio/Female/3 Alta/21A.mp3"
+        "audioMale": "Audio/Male/3 Alta/21A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/21A.mp3"
     },
 
     {
@@ -510,18 +510,18 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/22A/Front.webm",
             "lateral": "Videos/Male/3 Alta/22A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/22A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/22A/Front.webm",
             "lateral": "Videos/Female/3 Alta/22A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/22A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/22A.mp3",
-        "audio female": "Audio/Female/3 Alta/22A.mp3"
+        "audioMale": "Audio/Male/3 Alta/22A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/22A.mp3"
     },
 
     {
@@ -531,18 +531,18 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/24A/Front.webm",
             "lateral": "Videos/Male/3 Alta/24A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/24A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/24A/Front.webm",
             "lateral": "Videos/Female/3 Alta/24A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/24A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/24A.mp3",
-        "audio female": "Audio/Female/3 Alta/24A.mp3"
+        "audioMale": "Audio/Male/3 Alta/24A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/24A.mp3"
     },
 
     {
@@ -552,18 +552,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/32A/Front.webm",
             "lateral": "Videos/Male/3 Alta/32A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/32A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/32A/Front.webm",
             "lateral": "Videos/Female/3 Alta/32A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/32A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/32A.mp3",
-        "audio female": "Audio/Female/3 Alta/32A.mp3"
+        "audioMale": "Audio/Male/3 Alta/32A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/32A.mp3"
     },
 
     {
@@ -573,18 +573,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/33A/Front.webm",
             "lateral": "Videos/Male/3 Alta/33A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/33A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/33A/Front.webm",
             "lateral": "Videos/Female/3 Alta/33A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/33A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/33A.mp3",
-        "audio female": "Audio/Female/3 Alta/33A.mp3"
+        "audioMale": "Audio/Male/3 Alta/33A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/33A.mp3"
     },
 
     {
@@ -594,18 +594,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/34A/Front.webm",
             "lateral": "Videos/Male/3 Alta/34A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/34A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/34A/Front.webm",
             "lateral": "Videos/Female/3 Alta/34A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/34A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/34A.mp3",
-        "audio female": "Audio/Female/3 Alta/34A.mp3"
+        "audioMale": "Audio/Male/3 Alta/34A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/34A.mp3"
     },
 
     {
@@ -615,18 +615,18 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
-        "videos male": {
+        "videosMale": {
             "frontal": "Videos/Male/3 Alta/35A/Front.webm",
             "lateral": "Videos/Male/3 Alta/35A/Side.webm",
             "diagonal": "Videos/Male/3 Alta/35A/Diagonal.webm"
         },
-        "videos female": {
+        "videosFemale": {
             "frontal": "Videos/Female/3 Alta/35A/Front.webm",
             "lateral": "Videos/Female/3 Alta/35A/Side.webm",
             "diagonal": "Videos/Female/3 Alta/35A/Diagonal.webm"
         },
-        "audio male": "Audio/Male/3 Alta/35A.mp3",
-        "audio female": "Audio/Female/3 Alta/35A.mp3"
+        "audioMale": "Audio/Male/3 Alta/35A.mp3",
+        "audioFemale": "Audio/Female/3 Alta/35A.mp3"
     },
 
     {
