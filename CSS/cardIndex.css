@@ -1,0 +1,294 @@
+/* Título de la sección */
+
+h1 {
+    font-size: 3em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    color: #3DA1FF;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: -1px -1px 0 #7A5CFF, 1px -1px 0 #7A5CFF, -1px 1px 0 #7A5CFF, 1px 1px 0 #7A5CFF;
+}
+
+/* Título de la tarjeta principal (generador) */
+
+h3 {
+    width: 50%;
+    font-size: 2.5em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    color: #00E5FF;
+    text-align: center;
+    text-shadow: 0px 0px 15px #101828;
+    justify-self: center;
+    align-self: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Título de las tarjetas secundarias */
+
+h4 {
+    width: 70%;
+    font-size: 2em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0px 0px 15px #101828;
+    text-shadow: 0px 0px 15px #101828;
+    justify-self: center;
+    align-self: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4.title-second {
+    color: #FF3366;
+}
+
+h4.title-third {
+    color: #4DFF73;
+}
+
+/* Div que contiene las tres tarjetas (padres) */
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta principal */
+
+.main-card-parent {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.main-card {
+    width: 100%;
+    height: 700px;
+    justify-self: center;
+    align-items: center;
+    border-radius: 45px;
+    position: relative;
+}
+
+div.main-card {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url(../Img/Generador.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+    justify-self: center;
+    justify-content: center;
+}
+
+/* Tarjetas secundarias */
+
+.two-card-parent {
+    width: 35%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+a.second-card, a.third-card {
+    width: 100%;
+    height: 300px;
+    justify-self: center;
+    align-items: center;
+    border-radius: 45px;
+    position: relative;
+}
+
+div.second-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: url(../Img/Importancia.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+    justify-self: center;
+    justify-content: center;
+}
+
+div.third-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: url(../Img/Catalogo.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+    justify-self: center;
+    justify-content: center;
+}
+
+@media (max-width: 1500px) {
+    .main-card-parent {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .two-card-parent {
+        width: 90%;
+        height: 300px;
+        gap: 10%;
+        margin-top: 30px;
+    }
+
+    a.second-card {
+        width: 45%;
+        height: 300px;
+        justify-self: center;
+        align-items: center;
+    }
+
+    a.third-card {
+        width: 45%;
+        height: 300px;
+        justify-self: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-card-parent {
+        width: 80%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    div.main-card {
+        width: 100%;
+        height: 400px;
+    }
+
+    a.main-card {
+        width: 100%;
+        height: 400px;
+        justify-self: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .two-card-parent {
+        width: 80%;
+        height: auto;
+        flex-direction: row;
+        gap: 10%;
+        margin-top: 30px;
+    }
+
+    a.second-card, a.third-card {
+        height: 200px;
+    }
+
+    div.second-card, div.third-card {
+        height: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    h4.title-second {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .main-content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-card-parent {
+        height: 300px;
+    }
+
+    div.main-card {
+        height: 300px;
+    }
+
+    a.main-card {
+        height: 300px;
+    }
+
+    .two-card-parent {
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+
+    a.second-card, a.third-card {
+        width: 100%;
+        max-width: 400px;
+        height: 150px;
+    }
+
+    div.second-card, div.third-card {
+        height: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+}

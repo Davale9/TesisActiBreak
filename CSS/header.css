@@ -1,14 +1,6 @@
-h1 {
-    font-size: 3em;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 800;
-    color: #3DA1FF;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-shadow: -1px -1px 0 #7A5CFF, 1px -1px 0 #7A5CFF, -1px 1px 0 #7A5CFF, 1px 1px 0 #7A5CFF;
-
-
+html {
+    min-width: 320px;
+    font-size: 16px;
 }
 
 h2 {
@@ -18,6 +10,8 @@ h2 {
     color: #101828;
     text-align: center;
 }
+
+/* Quitar subrayado a los enlaces */
 
 a:link { 
   text-decoration: none; 
@@ -31,6 +25,8 @@ a:hover {
 a:active { 
   text-decoration: none; 
 }
+
+/* Quitar display block de los div */
 
 div {
     display: flex;
@@ -46,6 +42,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Header General */
 
 header {
     display: flex;
@@ -64,11 +62,16 @@ div.header-parent {
     justify-content: center;
 }
 
+/* Icono de la aplicación */
+
 a.header-icon {
     width: 15%;
     height: 100%;
-    justify-self: center;
+    display: flex;
+    justify-self: right;
+    justify-content: right;
     align-items: center;
+    align-self: center;
 }
 
 div.header-icon {
@@ -87,6 +90,8 @@ div.header-icon > img {
     align-self: center;
 }
 
+/* Nombre de la aplicación */
+
 a.header-name {
     justify-content: center;
     width: 400px;
@@ -102,6 +107,7 @@ div.header-name > img{
     justify-content: center;
 }
 
+/* Historial */
 
 a.header-history {
     width: 222px;
@@ -177,6 +183,10 @@ div.header-history > img {
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
     header {
         height: 75px;
     }
@@ -230,5 +240,11 @@ div.header-history > img {
 
     div.header-history > h2 {
         display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
     }
 }
