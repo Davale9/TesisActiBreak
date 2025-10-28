@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="../CSS/header.css"><style></style>
     <link rel="stylesheet" href="../CSS/cardCatalog.css"><style></style>
     <link rel="stylesheet" href="../CSS/neon.css"><style></style>
-    <link rel="stylesheet" href="../CSS/catalog.csss"><style></style>
+    <link rel="stylesheet" href="../CSS/catalog.css"><style></style>
+
+    <!-- Enlace a JavaScript para generar las tarjetas de los ejercicios -->
+    <script src="../JavaScript/catalog.js"></script>
 
     <!-- Google Fonts -->
     <!-- Nombre de la aplicación-->
@@ -56,7 +59,40 @@
     <div class="main-content">
         <div class="main-card-parent">
             <div class="main-card yellow-green">
-                
+
+                <div class="catalogo-container">
+                    <div class="filtros">
+                        <select id="filtro-intensidad">
+                            <option value="todos">Todas las intensidades</option>
+                            <option value="Baja">Baja</option>
+                            <option value="Media">Media</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                        <select id="filtro-enfoque">
+                            <option value="todos">Todos los enfoques</option>
+                            <option value="Tren superior">Tren superior</option>
+                            <option value="Tren inferior">Tren inferior</option>
+                            <option value="Columna">Columna</option>
+                        </select>
+                    </div>
+                    <div id="grid-ejercicios" class="grid-ejercicios">
+
+                    </div>
+                </div>
+                <div id="popup" class="popup hide">
+                    <div class="popup-content">
+                        <button id="close-popup" class="close-btn">X</button>
+                        <div class="popup-left">
+                            <video id="video-popup" autoplay loop muted></video>
+                            <button id="toggle-personaje" class="btn-personaje">Cambiar personaje</button>
+                        </div>
+                        <div class="popup-right">
+                            <h2 id="popup-nombre"></h2>
+                            <p id="popup-descripcion"></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="two-card-parent">
