@@ -627,7 +627,7 @@
         },
         "audio male": "Audio/Male/3 Alta/35A.mp3",
         "audio female": "Audio/Female/3 Alta/35A.mp3"
-    }
+    },
 
     {
         "id": "CB",
@@ -635,7 +635,7 @@
         "descripción": "Ahora, cambia de brazo.",
         "audio male": "Audio/Male/4 Extras/CB.mp3",
         "audio female": "Audio/Female/4 Extras/CB.mp3"
-    }
+    },
 
     {
         "id": "CP",
@@ -643,7 +643,7 @@
         "descripción": "Ahora, cambia de pierna.",
         "audio male": "Audio/Male/4 Extras/CP.mp3",
         "audio female": "Audio/Female/4 Extras/CP.mp3"
-    }
+    },
 
     {
         "id": "CL",
@@ -651,7 +651,7 @@
         "descripción": "Ahora, cambia de lado.",
         "audio male": "Audio/Male/4 Extras/CL.mp3",
         "audio female": "Audio/Female/4 Extras/CL.mp3"
-    }
+    },
 
     {
         "id": "IRB",
@@ -660,7 +660,7 @@
         "intensidad": "Baja",
         "audio male": "Audio/Male/4 Extras/IRB.mp3",
         "audio female": "Audio/Female/4 Extras/IRB.mp3"
-    }
+    },
 
     {
         "id": "IRM",
@@ -669,7 +669,7 @@
         "intensidad": "Media",
         "audio male": "Audio/Male/4 Extras/IRM.mp3",
         "audio female": "Audio/Female/4 Extras/IRM.mp3"
-    }
+    },
 
     {
         "id": "IRA",
@@ -678,7 +678,7 @@
         "intensidad": "Alta",
         "audio male": "Audio/Male/4 Extras/IRA.mp3",
         "audio female": "Audio/Female/4 Extras/IRA.mp3"
-    }
+    },
 
     {
         "id": "FR",
