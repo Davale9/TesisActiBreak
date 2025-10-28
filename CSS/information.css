@@ -1,0 +1,189 @@
+h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.impar > div > h5 {
+    color: #FF3366 ;
+}
+
+.par > div > h5 {
+    color: #FF9933 ;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFED;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.main-card {
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 10%;
+}
+
+.impar {
+    flex-direction: row;
+}
+
+.par {
+    flex-direction: row-reverse;
+}
+
+.text, .image {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#punto3 > div.text {
+    align-items: start;
+}
+
+h5, p, img.imagen, div.imagenes {
+    width: 100%;
+    text-align: left;
+}
+
+div.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+}
+
+.small {
+    width: 30%;
+
+}
+
+#punto10 > div {
+    width: 100%;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFED;
+    font-size: 1.2em;
+}
+
+li.pink-list {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FF3366;
+}
+
+#punto1 {
+    margin-top: 50px;
+}
+
+#punto10 {
+    margin-bottom: 50px;
+}
+
+#punto10 > div.text p {
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+    h5 {
+        font-size: 1.5em;
+    }
+
+    h5.extra {
+        display: none;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .par {
+        flex-direction: column;
+    }
+
+    .text, .image {
+        width: 100%;
+        align-items: start;
+        text-align: left;
+    }
+
+    .image {
+        gap: 0px;
+    }
+
+    h5, p, img.imagen, div.imagenes {
+        text-align: left;
+    }
+
+    div.imagenes {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+        justify-self: left;
+    }
+
+    .small {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    h5 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    h5.extra {
+        display: none;
+
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .image {
+        gap: 0px;
+    }
+
+    li, ul {
+        font-size: 0.9em;
+    }
+
+    li.pink-list {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FF3366;
+}
+}

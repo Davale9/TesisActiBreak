@@ -1,0 +1,87 @@
+/* Se define una propiedad angle para poder animarla */
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* Tarjeta azul - morado */
+
+.blue-purple::after, .blue-purple::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #7A5CFF , #00E5FF, #7A5CFF );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 50px;
+    animation: 3s spin linear infinite;
+}
+
+.blue-purple::before {
+    padding: 10px;
+    filter: blur(1rem);
+    opacity: 1;
+}
+
+/* Tarjeta rojo - naranja */
+
+.red-orange::after, .red-orange::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #FF9933  , #FF3366, #FF9933  );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 50px;
+    animation: 3s spin linear infinite;
+}
+
+.red-orange::before {
+    padding: 10px;
+    filter: blur(1rem);
+    opacity: 1;
+}
+
+/* Tarjeta verde - amarillo */
+
+.yellow-green::after, .yellow-green::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #4DFF73, #FFD93B, #4DFF73   );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 50px;
+    animation: 3s spin linear infinite;
+}
+
+.yellow-green::before {
+    padding: 10px;
+    filter: blur(1rem);
+    opacity: 1;
+}
+
+/* Animación de giro */
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
