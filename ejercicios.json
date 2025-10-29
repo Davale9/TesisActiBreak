@@ -6,6 +6,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/11B/Front.webm",
             "lateral": "Videos/Male/1 Baja/11B/Side.webm",
@@ -28,6 +29,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/12B/Front.webm",
             "lateral": "Videos/Male/1 Baja/12B/Side.webm",
@@ -50,6 +52,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/15B/Front.webm",
             "lateral": "Videos/Male/1 Baja/15B/Side.webm",
@@ -71,6 +74,7 @@
         "descripción": "Sentado con la espalda recta y mirando al frente, incline suavemente la cabeza hacia un hombro sin levantarlo. Mantenga la posición unos segundos y repita hacia el otro lado. Realice los movimientos lentamente.",
         "intensidad": "Baja",
         "enfoque": "Tronco",
+        "color": "#3DA1FF",
         "cambio de lado": 15,
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
@@ -94,6 +98,7 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
             "lateral": "Videos/Male/1 Baja/21B/Side.webm",
@@ -116,6 +121,7 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/23B/Front.webm",
             "lateral": "Videos/Male/1 Baja/23B/Side.webm",
@@ -138,6 +144,7 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/24B/Front.webm",
             "lateral": "Videos/Male/1 Baja/24B/Side.webm",
@@ -160,6 +167,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/31B/Front.webm",
             "lateral": "Videos/Male/1 Baja/31B/Side.webm",
@@ -182,6 +190,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/33B/Front.webm",
             "lateral": "Videos/Male/1 Baja/33B/Side.webm",
@@ -204,6 +213,7 @@
         "intensidad": "Baja",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/35B/Front.webm",
             "lateral": "Videos/Male/1 Baja/35B/Side.webm",
@@ -226,6 +236,7 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/12M/Front.webm",
             "lateral": "Videos/Male/2 Media/12M/Side.webm",
@@ -248,6 +259,7 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/13M/Front.webm",
             "lateral": "Videos/Male/2 Media/13M/Side.webm",
@@ -270,6 +282,7 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/14M/Front.webm",
             "lateral": "Videos/Male/2 Media/14M/Side.webm",
@@ -292,6 +305,7 @@
         "intensidad": "Media",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/15M/Front.webm",
             "lateral": "Videos/Male/2 Media/15M/Side.webm",
@@ -314,6 +328,7 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/21M/Front.webm",
             "lateral": "Videos/Male/2 Media/21M/Side.webm",
@@ -336,6 +351,7 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/23M/Front.webm",
             "lateral": "Videos/Male/2 Media/23M/Side.webm",
@@ -358,6 +374,7 @@
         "intensidad": "Media",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/25M/Front.webm",
             "lateral": "Videos/Male/2 Media/25M/Side.webm",
@@ -380,6 +397,7 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/32M/Front.webm",
             "lateral": "Videos/Male/2 Media/32M/Side.webm",
@@ -402,6 +420,7 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/33M/Front.webm",
             "lateral": "Videos/Male/2 Media/33M/Side.webm",
@@ -424,6 +443,7 @@
         "intensidad": "Media",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/35M/Front.webm",
             "lateral": "Videos/Male/2 Media/35M/Side.webm",
@@ -446,6 +466,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/11A/Front.webm",
             "lateral": "Videos/Male/3 Alta/11A/Side.webm",
@@ -468,6 +489,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/12A/Front.webm",
             "lateral": "Videos/Male/3 Alta/12A/Side.webm",
@@ -490,6 +512,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
         "cambio de lado": 15,
+        "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/15A/Front.webm",
             "lateral": "Videos/Male/3 Alta/15A/Side.webm",
@@ -512,6 +535,7 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/21A/Front.webm",
             "lateral": "Videos/Male/3 Alta/21A/Side.webm",
@@ -534,6 +558,7 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/22A/Front.webm",
             "lateral": "Videos/Male/3 Alta/22A/Side.webm",
@@ -556,6 +581,7 @@
         "intensidad": "Alta",
         "enfoque": "Tronco",
         "cambio de lado": 15,
+        "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/24A/Front.webm",
             "lateral": "Videos/Male/3 Alta/24A/Side.webm",
@@ -578,6 +604,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/32A/Front.webm",
             "lateral": "Videos/Male/3 Alta/32A/Side.webm",
@@ -600,6 +627,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/33A/Front.webm",
             "lateral": "Videos/Male/3 Alta/33A/Side.webm",
@@ -622,6 +650,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/34A/Front.webm",
             "lateral": "Videos/Male/3 Alta/34A/Side.webm",
@@ -644,6 +673,7 @@
         "intensidad": "Alta",
         "enfoque": "Tren superior",
         "cambio de lado": 15,
+        "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/35A/Front.webm",
             "lateral": "Videos/Male/3 Alta/35A/Side.webm",

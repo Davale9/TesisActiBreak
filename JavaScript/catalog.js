@@ -34,12 +34,13 @@ function renderEjercicios() {
     ejercicios
         .filter(e => (filInt == "todos" || e.intensidad == filInt))
         .filter(e => (filEnf == "todos" || e.enfoque == filEnf))
+        .filter(e => (e.enfoque != null))
         .forEach(e => {
             const card = document.createElement("div");
             card.classList.add("card");
 
-            // Estilo según intensidad y enfoque (a definir con tus gradientes)
-            card.style.border = "3px solid cyan";
+            card.style.border = e.color;
+            card.style.boxShadow = e.color;
 
             const img = document.createElement("img");
             img.src = "../" + e.portada;
@@ -57,11 +58,11 @@ function renderEjercicios() {
                 video.loop = true;
                 video.muted = true;
                 video.style.width = "100%";
-                card.replaceChild(video, img);
+                img.replaceWith(video);
             });
 
             card.addEventListener("mouseleave", () => {
-                card.replaceChild(img, card.querySelector("video"));
+                card.querySelector("video").replaceWith(img);
             });
 
             card.addEventListener("click", () => abrirPopup(e));
