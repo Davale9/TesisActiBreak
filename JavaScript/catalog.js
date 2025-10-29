@@ -58,7 +58,8 @@ function renderEjercicios() {
                 video.autoplay = true;
                 video.loop = true;
                 video.muted = true;
-                video.playsinline = true;
+                video.setAttribute("playsinline", "");
+                video.setAttribute("webkit-playsinline", "");
                 video.style.width = "50%";
                 img.replaceWith(video);
             });
