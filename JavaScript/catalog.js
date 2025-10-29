@@ -39,8 +39,8 @@ function renderEjercicios() {
             const card = document.createElement("div");
             card.classList.add("card");
 
-            card.style.border = e.color;
-            card.style.boxShadow = e.color;
+            card.style.border = "3px solid " + e.color;
+            card.style.boxShadow = "0px 0px 10px " + e.color;
 
             const img = document.createElement("img");
             img.src = "../" + e.portada;
@@ -48,6 +48,7 @@ function renderEjercicios() {
 
             const title = document.createElement("h3");
             title.textContent = e.nombre;
+            title.style.color = e.color;
             card.appendChild(title);
 
             // Hover → video inline
@@ -57,7 +58,7 @@ function renderEjercicios() {
                 video.autoplay = true;
                 video.loop = true;
                 video.muted = true;
-                video.style.width = "100%";
+                video.style.width = "50%";
                 img.replaceWith(video);
             });
 
@@ -73,18 +74,28 @@ function renderEjercicios() {
 function abrirPopup(ejercicio) {
     ejercicioActual = ejercicio;
     personajeActual = "male";
+    const contenidoPopup = document.getElementById("popup-content");
+
+    contenidoPopup.style.border = "3px solid " + ejercicioActual.color;
+    contenidoPopup.style.boxShadow = "0px 0px 10px " + ejercicioActual.color;
+
     document.getElementById("popup-nombre").textContent = ejercicio.nombre;
+    document.getElementById("popup-nombre").style.color = ejercicioActual.color;
     document.getElementById("popup-descripcion").textContent = ejercicio.descripción;
+    document.getElementById("close-popup").style.color = ejercicioActual.color;
+    
+    document.getElementById("toggle-personaje").style.backgroundColor = ejercicioActual.color;
+
     actualizarVideoPopup();
     document.getElementById("popup").classList.remove("hide");
 }
 
 function actualizarVideoPopup() {
     const video = document.getElementById("video-popup");
-    if (personajeActual == "Male") {
-        video.src = ejercicioActual.videosMale.diagonal;
-    } else if (personajeActual == "Female") {
-        video.src = ejercicioActual.videosFemale.diagonal;
+    if (personajeActual == "male") {
+        video.src = "../" + ejercicioActual.videosMale.diagonal;
+    } else if (personajeActual == "female") {
+        video.src = "../" + ejercicioActual.videosFemale.diagonal;
     }
     
 }
