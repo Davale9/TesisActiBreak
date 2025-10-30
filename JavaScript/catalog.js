@@ -1,7 +1,7 @@
 let ejercicios = [];
 let personajeActual = "male";
 let ejercicioActual;
-const url = "https://davale9.github.io/TesisActiBreak/ejercicios.json";
+const url = "https://davale9.github.io/TesisActiBreak/ejercicios.json"; //url actualizada
 const url1 = "../ejercicios.json"
 
 document.addEventListener("DOMContentLoaded", () => {
