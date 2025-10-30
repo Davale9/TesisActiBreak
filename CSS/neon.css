@@ -13,7 +13,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #7A5CFF , #00E5FF, #7A5CFF );
+    background: conic-gradient(from var(--angle), #7A5CFF , #00E5FF, #7A5CFF);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -24,8 +24,9 @@
 }
 
 .blue-purple::before {
-    padding: 10px;
-    filter: blur(1rem);
+    padding: 0px;
+    filter: blur(2rem);
+    /*animation: 3s pulseShadow linear infinite;*/
     opacity: 1;
 }
 
@@ -36,7 +37,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #FF9933  , #FF3366, #FF9933  );
+    background: conic-gradient(from var(--angle), #FF9933  , #FF3366, #FF9933);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -47,8 +48,8 @@
 }
 
 .red-orange::before {
-    padding: 10px;
-    filter: blur(1rem);
+    padding: 0px;
+    filter: blur(2rem);
     opacity: 1;
 }
 
@@ -59,7 +60,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #4DFF73, #FFD93B, #4DFF73   );
+    background: conic-gradient(from var(--angle), #4DFF73, #FFD93B, #4DFF73);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -70,8 +71,8 @@
 }
 
 .yellow-green::before {
-    padding: 10px;
-    filter: blur(1rem);
+    padding: 0px;
+    filter: blur(2rem);
     opacity: 1;
 }
 
@@ -85,6 +86,26 @@
         --angle: 360deg;
     }
 }
+
+/*
+@keyframes pulseShadow {
+  0% {
+    filter: drop-shadow(1rem -1rem 10px #7A5CFF) drop-shadow(-1rem 1rem 10px #00E5FF);
+  }
+  25% {
+    filter: drop-shadow(1rem 1rem 10px #7A5CFF) drop-shadow(-1rem -1rem 10px #00E5FF);
+  }
+  50% {
+    filter: drop-shadow(-1rem 1rem 10px #7A5CFF) drop-shadow(1rem -1rem 10px #00E5FF);
+  }
+  75% {
+    filter: drop-shadow(-1rem -1rem 10px #7A5CFF) drop-shadow(1rem 1rem 10px #00E5FF);
+  }
+  100% {
+    filter: drop-shadow(1rem -1rem 10px #7A5CFF) drop-shadow(-1rem 1rem 10px #00E5FF);
+  }
+}
+*/
 
 a {
     border-radius: 50px;
