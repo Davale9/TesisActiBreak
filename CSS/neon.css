@@ -85,3 +85,7 @@
         --angle: 360deg;
     }
 }
+
+a {
+    border-radius: 50px;
+}

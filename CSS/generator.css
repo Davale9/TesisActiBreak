@@ -1,0 +1,413 @@
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #FFFFED;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #FFFFED;
+    text-align: center;
+}
+
+button {
+    background-color: #3DA1FF;
+    box-shadow: 0px 0px 5px #3DA1FF;
+    border: none;
+    color: #101828;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.character-images {
+    background-color: transparent;
+    box-shadow: none;
+    width: 40%;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.character-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-right: 1px solid #3DA1FF;
+    gap: 10px;
+}
+
+.characters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0px;
+}
+
+.character-images > img {
+    width: 100%;
+    filter: drop-shadow(0 0 5px #3DA1FF);
+}
+
+.intensity-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 1px solid #3DA1FF;
+    border-right: 1px solid #3DA1FF;
+}
+
+.intensities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.button-intensity {
+    width: 30%;
+    height: 40px;
+}
+
+.duration-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 1px solid #3DA1FF;
+}
+
+.durations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    row-gap: 20px;
+    column-gap: 8%;
+}
+
+.button-duration {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.routine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.routine-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.routine-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 25px;
+    height: 400px;
+}
+
+/*
+#angle-container {
+    align-items: end;
+}
+*/
+
+.button-angle {
+    width: 60%;
+    min-width: 170px;
+    height: 40px;
+}
+
+.cronometro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#time-rutina, #time-ejercicio, h5 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-control {
+    width: 65px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .character-selector, .intensity-selector, .duration-selector {
+        height: 340px;
+    }
+
+    .routine-element {
+        height: 300px;
+    }
+
+    .button-intensity {
+        width: 50%;
+        height: 40px;
+    }
+
+    .button-angle {
+        width: 60%;
+        min-width: auto;
+        height: 60px;
+    }
+
+    .button-control {
+        width: 60px;
+    }
+
+    .characters {
+        flex-direction: column;
+    }
+
+    .character-images {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .button-angle {
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .character-selector, .intensity-selector, .duration-selector {
+        height: 280px;
+        border-top: none;   
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .character-selector, .intensity-selector {
+        width: 45%;
+    }
+
+    .character-selector {
+        border-right: 1px solid #3DA1FF;
+    }
+
+    .intensity-selector {
+        border-left: 1px solid #3DA1FF;
+    }
+
+    .duration-selector {
+        width: 90%;
+        height: 200px;
+        border-top: 2px solid #3DA1FF;
+    }
+
+    .button-control {
+        width: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .routine-parent {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .routine-element {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        gap: 10px;
+    }
+
+    #angle-container {
+        flex-wrap: nowrap;
+    }
+
+    .video-container {
+        height: 200px;
+    }
+
+    .button-angle {
+        height: auto;
+        min-height: 40px;
+    }
+
+    .cronometro {
+        width: 45%;
+        flex-direction: column;
+    }
+
+    #time-rutina, #time-ejercicio {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .controls {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .button-control {
+        width: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    h3 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+
+    .selector-parent {
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .character-selector, .intensity-selector, .duration-selector {
+        width: 80%;
+        height: auto;
+        border-top: none;   
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .character-selector {
+        border-bottom: 1px solid #3DA1FF;
+    }
+
+    .intensity-selector {
+        border-top: 1px solid #3DA1FF;
+        border-bottom: 1px solid #3DA1FF;
+    }
+
+    .duration-selector {
+        border-top: 1px solid #3DA1FF;
+    }
+}
+
+@media (max-width: 320px) {
+    .button-angle {
+        height: auto;
+        min-height: 56px;
+    }
+
+    .character-images {
+        flex-direction: row;
+        width: 60%;
+    }
+}
+
+.hide {
+    display: none;
+}

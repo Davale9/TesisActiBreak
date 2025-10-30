@@ -65,7 +65,6 @@ div.main-card {
     background-color: #101828;
     width: 100%;
     height: auto;
-    min-height: 700px;
     position: relative;
     border-radius: 45px;
     justify-self: center;
@@ -167,7 +166,6 @@ div.third-card {
     .main-card-parent {
         width: 80%;
         height: auto;
-        min-height: 400px;
         margin-bottom: 30px;
     }
 
@@ -180,7 +178,6 @@ div.third-card {
     a.main-card {
         width: 100%;
         height: auto;
-        min-height: 400px;
         justify-self: center;
         align-items: center;
         border-radius: 15px;
@@ -234,17 +231,14 @@ div.third-card {
 
     .main-card-parent {
         height: auto;
-        min-height: 300px;
     }
 
     div.main-card {
         height: auto;
-        min-height: 300px;
     }
 
     a.main-card {
         height: auto;
-        min-height: 300px;
     }
 
     .two-card-parent {
