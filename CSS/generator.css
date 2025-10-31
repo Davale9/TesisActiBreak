@@ -32,6 +32,15 @@ button {
     font-weight: 700;
 }
 
+button:disabled {
+    pointer-events: none;
+
+    background-color: #FFFFED;
+    box-shadow: 0px 0px 5px #FFFFED;
+    color: #101828;
+    opacity: 0.5;
+}
+
 .character-images {
     background-color: transparent;
     box-shadow: none;

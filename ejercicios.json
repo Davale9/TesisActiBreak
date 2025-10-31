@@ -5,7 +5,7 @@
         "descripción": "Sentado en una silla, con la espalda recta y las manos apoyadas en los muslos o en la silla, eleve los talones manteniendo las puntas de los pies en el suelo. Esto produce una ligera elevación de las rodillas. Mantenga la posición unos segundos y descienda lentamente.",
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/11B/Front.webm",
@@ -28,7 +28,7 @@
         "descripción": "Sentado con la espalda recta y las manos apoyadas en los muslos o en la silla, estire una pierna hacia el frente hasta que quede completamente extendida, mientras la otra permanece flexionada con el pie en el suelo. Mantenga unos segundos y repita con la pierna contraria.",
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/12B/Front.webm",
@@ -51,7 +51,7 @@
         "descripción": "Sentado con la espalda recta y las manos apoyadas en la silla, eleve una rodilla del suelo manteniendo la pierna flexionada. Sostenga la posición unos segundos y repita con la otra pierna.",
         "intensidad": "Baja",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#7A5CFF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/15B/Front.webm",
@@ -75,7 +75,7 @@
         "intensidad": "Baja",
         "enfoque": "Tronco",
         "color": "#3DA1FF",
-        "cambio de lado": 15,
+        "duracion": 30,
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
             "lateral": "Videos/Male/1 Baja/21B/Side.webm",
@@ -97,7 +97,7 @@
         "descripción": "Sentado con la espalda recta y sin girar el torso, gire suavemente la cabeza para mirar hacia un hombro. Mantenga unos segundos y cambie al lado contrario. Haga los movimientos de manera lenta y controlada.",
         "intensidad": "Baja",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/21B/Front.webm",
@@ -120,7 +120,7 @@
         "descripción": "Sentado con la espalda recta y los brazos cruzados sobre el pecho, gire lentamente el torso hacia un lado sin mover la cadera. Mantenga unos segundos y gire al otro lado.",
         "intensidad": "Baja",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/23B/Front.webm",
@@ -143,7 +143,7 @@
         "descripción": "Sentado con la espalda recta, coloque las manos detrás de la cabeza con los codos abiertos. Arquee suavemente la espalda hacia atrás abriendo el pecho y los codos. Mantenga unos segundos y regrese al centro. Repita varias veces.",
         "intensidad": "Baja",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#3DA1FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/24B/Front.webm",
@@ -166,7 +166,7 @@
         "descripción": "Sentado con la espalda recta, extienda los brazos y realice movimientos circulares suaves con las muñecas, primero en una dirección y luego en la contraria.",
         "intensidad": "Baja",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/31B/Front.webm",
@@ -189,7 +189,7 @@
         "descripción": "Sentado con la espalda recta, estire un brazo al frente con la palma hacia afuera y los dedos hacia arriba. Con la otra mano, tire suavemente de los dedos hacia atrás para estirar antebrazo y dedos. Mantenga unos segundos y repita con el otro brazo.",
         "intensidad": "Baja",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/33B/Front.webm",
@@ -212,7 +212,7 @@
         "descripción": "Sentado con la espalda recta, eleve ambos brazos lo más alto posible, estirando torso y brazos. Mantenga unos segundos y descienda lentamente.",
         "intensidad": "Baja",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#00E5FF",
         "videosMale": {
             "frontal": "Videos/Male/1 Baja/35B/Front.webm",
@@ -235,7 +235,7 @@
         "descripción": "Con una silla detrás para apoyo, mantenga la espalda recta y los brazos extendidos al frente. Flexione las piernas como si fuera a sentarse, tocando suavemente la silla. Luego, impulse el cuerpo hacia arriba para volver a la posición de pie. Repita varias veces.",
         "intensidad": "Media",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/12M/Front.webm",
@@ -258,7 +258,7 @@
         "descripción": "De pie y en el mismo lugar, eleve alternadamente las rodillas como si caminara en sitio. Mantenga el movimiento lento y controlado para evitar fatiga.",
         "intensidad": "Media",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/13M/Front.webm",
@@ -281,7 +281,7 @@
         "descripción": "De pie, doble una pierna hacia atrás y tome el pie con la mano del mismo lado, llevándolo hacia el glúteo para estirar la parte frontal del muslo. Mantenga unos segundos y cambie de pierna. Si necesita apoyo, sujétese con la otra mano a una superficie estable.",
         "intensidad": "Media",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/14M/Front.webm",
@@ -304,7 +304,7 @@
         "descripción": "De pie, eleve una rodilla hacia el pecho y abrácela con ambas manos para estirar el glúteo. Mantenga unos segundos y repita con la otra pierna. Si necesita apoyo, sujétese con una mano a una superficie estable.",
         "intensidad": "Media",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#4DFF73",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/15M/Front.webm",
@@ -327,7 +327,7 @@
         "descripción": "De pie, con los brazos a los costados, incline lentamente el torso hacia un lado intentando llevar la mano hacia la rodilla o la pantorrilla del mismo lado. Mantenga unos segundos y repita al otro lado.",
         "intensidad": "Media",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/21M/Front.webm",
@@ -350,7 +350,7 @@
         "descripción": "Coloque una silla frente a usted. Apoye las manos en la parte superior del espaldar y retroceda un par de pasos. Flexione la cadera hasta que el torso quede paralelo al suelo, con los brazos extendidos. Mantenga varios segundos y repita.",
         "intensidad": "Media",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/23M/Front.webm",
@@ -373,7 +373,7 @@
         "descripción": "De pie, con las manos apoyadas en la cintura y la espalda recta, realice círculos amplios con la cadera lentamente, en un sentido y luego en el contrario.",
         "intensidad": "Media",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#A6EC57",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/25M/Front.webm",
@@ -396,7 +396,7 @@
         "descripción": "De pie y con la espalda recta, lleve un brazo por encima de la cabeza y doble el codo, apuntando hacia arriba. Con la otra mano sujete suavemente ese codo para aumentar el estiramiento. Mantenga unos segundos y repita con el otro brazo.",
         "intensidad": "Media",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/32M/Front.webm",
@@ -419,7 +419,7 @@
         "descripción": "De pie, flexione un codo llevando la mano hacia el hombro mientras extiende el otro brazo. Alterne el movimiento de ambos brazos varias veces de manera fluida.",
         "intensidad": "Media",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/33M/Front.webm",
@@ -442,7 +442,7 @@
         "descripción": "De pie, con la espalda recta y los brazos a los costados, eleve los hombros hacia arriba, llévelos hacia atrás, luego hacia abajo y finalmente hacia adelante, realizando un movimiento circular. Repita varias veces en un sentido y luego en el contrario.",
         "intensidad": "Media",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FFD93B",
         "videosMale": {
             "frontal": "Videos/Male/2 Media/35M/Front.webm",
@@ -465,7 +465,7 @@
         "descripción": "De pie, flexione ligeramente las rodillas. Estire una pierna hacia adelante apoyándola en el talón y mantenga la otra flexionada. Coloque las manos sobre la pierna extendida e incline suavemente el torso hacia adelante, sintiendo el estiramiento en la parte posterior de la pierna. Mantenga unos segundos, vuelva a la posición inicial y repita con la otra pierna.",
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/11A/Front.webm",
@@ -488,7 +488,7 @@
         "descripción": "De pie, con la espalda recta y los brazos extendidos al frente, flexione las rodillas descendiendo como si fuera a ponerse de cuclillas. Baje hasta donde le sea cómodo (no importa que las rodillas sobrepasen ligeramente la punta de los pies) y luego regrese a la posición de pie. Realice varias repeticiones.",
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/12A/Front.webm",
@@ -511,7 +511,7 @@
         "descripción": "De pie y en el mismo lugar, eleve alternadamente las rodillas como si caminara en sitio, pero a un ritmo más rápido para aumentar la activación.",
         "intensidad": "Alta",
         "enfoque": "Tren inferior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF9933",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/15A/Front.webm",
@@ -534,7 +534,7 @@
         "descripción": "Inicie con un estiramiento de tríceps llevando un brazo por encima de la cabeza y doblando el codo. Con la otra mano sujete suavemente ese codo. Luego, incline el cuerpo hacia el lado del codo estirado para lograr un estiramiento intensivo de todo el costado del torso. Mantenga unos segundos y repita al otro lado.",
         "intensidad": "Alta",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/21A/Front.webm",
@@ -557,7 +557,7 @@
         "descripción": "De pie y con la espalda recta, lleve los hombros hacia atrás y las manos detrás de la cadera. Flexione levemente las rodillas e incline el torso hacia adelante desde la cadera manteniendo la espalda recta, hasta sentir el estiramiento en la parte posterior de las piernas y la cadera. Mantenga unos segundos y regrese.",
         "intensidad": "Alta",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/22A/Front.webm",
@@ -580,7 +580,7 @@
         "descripción": "Colóquese de pie contra una pared, con cabeza, hombros, glúteos y talones en contacto con ella. Apoye los brazos flexionados contra la pared y deslícelo lentamente hacia arriba y hacia abajo sin despegar los brazos. Repita varias veces.",
         "intensidad": "Alta",
         "enfoque": "Tronco",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF664D",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/24A/Front.webm",
@@ -603,7 +603,7 @@
         "descripción": "De pie, con la espalda recta y los brazos extendidos hacia los lados, realice movimientos circulares lentos manteniendo los brazos estirados. Hágalo en ambos sentidos.",
         "intensidad": "Alta",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/32A/Front.webm",
@@ -626,7 +626,7 @@
         "descripción": "De pie y con la espalda recta, coloque los brazos flexionados a los lados del cuerpo con los dedos mirando hacia arriba. Abra la caja torácica llevando suavemente las escápulas hacia atrás y como “intentando” juntar los codos detrás de la espalda. Esto crea un estiramiento en el pecho.",
         "intensidad": "Alta",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/33A/Front.webm",
@@ -649,7 +649,7 @@
         "descripción": "De pie y con la espalda recta, eleve los brazos por encima de la cabeza y entrelace los dedos con las palmas mirando hacia arriba. Eleve los talones y estire todo el cuerpo hacia arriba para lograr un estiramiento vertical.",
         "intensidad": "Alta",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/34A/Front.webm",
@@ -672,7 +672,7 @@
         "descripción": "Pase un brazo extendido por delante del torso. Con el otro brazo, empuje suavemente el brazo estirado hacia el pecho para estirar el hombro (deltoides). Mantenga unos segundos y repita con el otro brazo.",
         "intensidad": "Alta",
         "enfoque": "Tren superior",
-        "cambio de lado": 15,
+        "duracion": 30,
         "color": "#FF3366",
         "videosMale": {
             "frontal": "Videos/Male/3 Alta/35A/Front.webm",
