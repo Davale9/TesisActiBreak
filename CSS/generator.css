@@ -232,6 +232,10 @@ button:disabled {
     height: auto;
 }
 
+video {
+    border-radius: 18px;
+}
+
 @media (max-width: 1000px) {
     .character-selector, .intensity-selector, .duration-selector {
         height: 340px;

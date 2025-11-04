@@ -4,6 +4,12 @@ var intensidad = "";
 var duracion = 0;
 var ejerciciosTodos = [];
 var ejerciciosRutina = [];
+const videoContainer = document.getElementById("video-container");
+
+//Variables para pausas
+let timerId;
+let remainingTime;
+let startTime;
 
 
 //Botones de personaje
@@ -27,6 +33,17 @@ const boton7 = document.getElementById("7");
 const boton8 = document.getElementById("8");
 const boton9 = document.getElementById("9");
 const boton10 = document.getElementById("10");
+
+//Botones de ángulos
+const botonFrente = document.getElementById("Frente");
+const botonDiagonal = document.getElementById("Diagonal");
+const botonLado = document.getElementById("Lado");
+
+//Botones de controles
+const botonPausa = document.getElementById("Pausa");
+const botonSilencio = document.getElementById("Silencio");
+const botonSaltar = document.getElementById("Saltar");
+const botonReemplazar = document.getElementById("Reemplazar");
 
 //Arreglos con todos los botones
 const intensidades = [...document.getElementsByClassName("button-intensity")];
@@ -171,6 +188,135 @@ function generarRutina() {
     mostrarRutina(ejerciciosRutina);
 }
 
-function mostrarRutina(ejeRutina) {
-    console.log(ejeRutina);
+async function mostrarRutina(ejeRutina) {
+    for (let index = 0; index < ejeRutina.length; index++) {
+        reproducirAudios(ejeRutina[index]);
+
+        renderizarVideos(ejeRutina[index]);
+
+        await wait(ejeRutina[index].duracion * 1000);
+    }
+}
+
+function reproducirAudios(ejercicio) {
+    const audio = document.createElement("audio");
+    if (personaje == "male") {
+        audio.src = "../" + ejercicio.audioMale;
+        audio.play();
+    } else if (personaje == "female") {
+        audio.src = "../" + ejercicio.audioFemale;
+        audio.play();
+    }
+
+    audio.addEventListener("ended", () => {
+        audio.remove();
+    });
+
+    botonPausa.addEventListener("click", () => { 
+        if (botonPausa.value == "1") {
+            audio.pause();
+        } else if (botonPausa.value == "0" && audio.currentTime < audio.duration) {
+            audio.play();
+        }
+    });
+}
+
+async function renderizarVideos(ejercicio) {
+    const video = document.createElement("video");
+    var isPaused = false;
+    video.id = "video";
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.style.width = "100%";
+
+    var tiempoActual = video.currentTime;
+
+    if (personaje == "male") {
+        video.src = "../" + ejercicio.videosMale.diagonal;
+        videoContainer.appendChild(video);
+    } else if (personaje == "female") {
+        video.src = "../" + ejercicio.videosFemale.diagonal;
+        videoContainer.appendChild(video);
+    }
+
+    botonFrente.addEventListener("click", () => { 
+        if (personaje == "male") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosMale.frontal;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        } else if (personaje == "female") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosFemale.frontal;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        }
+    });
+
+    botonDiagonal.addEventListener("click", () => { 
+        if (personaje == "male") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosMale.diagonal;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        } else if (personaje == "female") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosFemale.diagonal;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        }
+    });
+
+    botonLado.addEventListener("click", () => { 
+        if (personaje == "male") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosMale.lateral;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        } else if (personaje == "female") {
+            tiempoActual = video.currentTime;
+            video.src = "../" + ejercicio.videosFemale.lateral;
+            video.currentTime = tiempoActual;
+            if (isPaused) {
+                video.pause();
+            }
+        }
+    });
+
+    botonPausa.addEventListener("click", () => { 
+        if (botonPausa.value == "1") {
+            botonPausa.value = "0";
+            video.pause();
+            document.getElementById("icono-pausa").classList.add("hide");
+            document.getElementById("icono-play").classList.remove("hide");
+            isPaused = true;
+        } else if (botonPausa.value == "0") {
+            botonPausa.value = "1";
+            video.play();
+            document.getElementById("icono-pausa").classList.remove("hide");
+            document.getElementById("icono-play").classList.add("hide");
+            isPaused = false;
+        }
+    });
+
+    await wait(ejercicio.duracion * 1000);
+
+    video.remove();
+}
+
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
