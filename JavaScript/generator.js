@@ -1,15 +1,19 @@
 //Variaables para el generador
-var personaje = "";
-var intensidad = "";
-var duracion = 0;
-var ejerciciosTodos = [];
-var ejerciciosRutina = [];
+let personaje = "";
+let intensidad = "";
+let duracion = 0;
+let ejerciciosTodos = [];
+let ejerciciosRutina = [];
+let indiceActual = 0;
+let video = null;
+let audio = null;
 const videoContainer = document.getElementById("video-container");
 
 //Variables para pausas
-let timerId;
-let remainingTime;
-let startTime;
+let tiempoRestante = 0;
+let temporizador = null;
+let enPausa = false;
+let isPaused = false;
 
 
 //Botones de personaje
@@ -185,45 +189,25 @@ function generarRutina() {
         }
     }
 
-    mostrarRutina(ejerciciosRutina);
+    renderizarVideos(ejerciciosRutina[indiceActual], ejerciciosRutina[indiceActual].duracion);
 }
 
-async function mostrarRutina(ejeRutina) {
-    for (let index = 0; index < ejeRutina.length; index++) {
-        reproducirAudios(ejeRutina[index]);
-
-        renderizarVideos(ejeRutina[index]);
-
-        await wait(ejeRutina[index].duracion * 1000);
+function pasarEjercicio() {
+    indiceActual++;
+    if (indiceActual < ejerciciosRutina.length) {
+        const siguiente = ejerciciosRutina[indiceActual];
+        renderizarVideos(siguiente, siguiente.duracion);
+    } else {
+        finalizarRutina();
     }
 }
 
-function reproducirAudios(ejercicio) {
-    const audio = document.createElement("audio");
-    if (personaje == "male") {
-        audio.src = "../" + ejercicio.audioMale;
-        audio.play();
-    } else if (personaje == "female") {
-        audio.src = "../" + ejercicio.audioFemale;
-        audio.play();
-    }
+function renderizarVideos(ejercicio, duracion) {
+    video = document.createElement("video");
 
-    audio.addEventListener("ended", () => {
-        audio.remove();
-    });
+    audio = document.createElement("audio");
 
-    botonPausa.addEventListener("click", () => { 
-        if (botonPausa.value == "1") {
-            audio.pause();
-        } else if (botonPausa.value == "0" && audio.currentTime < audio.duration) {
-            audio.play();
-        }
-    });
-}
-
-async function renderizarVideos(ejercicio) {
-    const video = document.createElement("video");
-    var isPaused = false;
+    isPaused = false;
     video.id = "video";
     video.autoplay = true;
     video.loop = true;
@@ -237,10 +221,20 @@ async function renderizarVideos(ejercicio) {
     if (personaje == "male") {
         video.src = "../" + ejercicio.videosMale.diagonal;
         videoContainer.appendChild(video);
+
+        audio.src = "../" + ejercicio.audioMale;
+        audio.play();
     } else if (personaje == "female") {
         video.src = "../" + ejercicio.videosFemale.diagonal;
         videoContainer.appendChild(video);
+
+        audio.src = "../" + ejercicio.audioFemale;
+        audio.play();
     }
+
+    audio.addEventListener("ended", () => {
+        audio.remove();
+    });
 
     botonFrente.addEventListener("click", () => { 
         if (personaje == "male") {
@@ -296,27 +290,68 @@ async function renderizarVideos(ejercicio) {
         }
     });
 
-    botonPausa.addEventListener("click", () => { 
-        if (botonPausa.value == "1") {
-            botonPausa.value = "0";
-            video.pause();
-            document.getElementById("icono-pausa").classList.add("hide");
-            document.getElementById("icono-play").classList.remove("hide");
-            isPaused = true;
-        } else if (botonPausa.value == "0") {
-            botonPausa.value = "1";
-            video.play();
-            document.getElementById("icono-pausa").classList.remove("hide");
-            document.getElementById("icono-play").classList.add("hide");
-            isPaused = false;
+    tiempoRestante = duracion;
+    actualizarCronometro();
+
+    if (temporizador) clearInterval(temporizador);
+
+    temporizador = setInterval(() => {
+        if (!enPausa) {
+            tiempoRestante -= 1;
+            actualizarCronometro();
+            console.log(enPausa);
+
+            if (tiempoRestante <= 0) {
+                clearInterval(temporizador);
+                video.remove();
+                pasarEjercicio();   
+            }
         }
-    });
-
-    await wait(ejercicio.duracion * 1000);
-
-    video.remove();
+    }, 1000);
 }
 
-function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+botonPausa.addEventListener("click", () => { 
+    if (botonPausa.value == "1") {
+        if (enPausa) return;
+        enPausa = true;
+        
+        botonPausa.value = "0";
+        video.pause();
+        document.getElementById("icono-pausa").classList.add("hide");
+        document.getElementById("icono-play").classList.remove("hide");
+        isPaused = true;
+
+        audio.pause();
+
+        console.log(enPausa);
+    } else {
+        if (!enPausa) return;
+        enPausa = false;
+
+        botonPausa.value = "1";
+        video.play();
+        document.getElementById("icono-pausa").classList.remove("hide");
+        document.getElementById("icono-play").classList.add("hide");
+        isPaused = false;
+        
+        if (audio && audio.currentTime < audio.duration) {
+            audio.play();
+        }
+
+        console.log(enPausa);
+    }
+});
+
+function actualizarCronometro() {
+    const cronometro = document.getElementById("time-ejercicio");
+    const minutos = String(Math.floor(tiempoRestante / 60)).padStart(2, "0");
+    const segundos = String(tiempoRestante % 60).padStart(2, "0");
+    cronometro.textContent = `${minutos}:${segundos}`;
+}
+
+function finalizarRutina() {
+    clearInterval(temporizador);
+    if (video) video.remove();
+    if (audio) audio.remove();
+    alert("¡Rutina completada!");
 }
