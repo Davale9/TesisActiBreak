@@ -52,6 +52,7 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 200px;
 }
 
 .selector-parent {
@@ -71,7 +72,7 @@ button:disabled {
     align-items: center;
     justify-content: flex-start;
     width: 33%;
-    height: 250px;
+    height: 300px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-right: 1px solid #3DA1FF;
@@ -98,7 +99,7 @@ button:disabled {
     align-items: center;
     justify-content: flex-start;
     width: 33%;
-    height: 250px;
+    height: 300px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-left: 1px solid #3DA1FF;
@@ -125,7 +126,7 @@ button:disabled {
     align-items: center;
     justify-content: flex-start;
     width: 33%;
-    height: 250px;
+    height: 300px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-left: 1px solid #3DA1FF;
@@ -172,11 +173,11 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 130%;
+    width: 30%;
     margin-top: 10px;
     margin-bottom: 10px;
     gap: 25px;
-    height: 400px;
+    height: 350px;
 }
 
 /*
@@ -234,6 +235,19 @@ button:disabled {
 
 video {
     border-radius: 18px;
+}
+
+.reiniciar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#boton-reiniciar {
+    width: 50%;
 }
 
 @media (max-width: 1000px) {

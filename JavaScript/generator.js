@@ -3,6 +3,7 @@ let personaje = "";
 let intensidad = "";
 let duracion = 0;
 let ejerciciosTodos = [];
+let ejerciciosFiltrados = [];
 let ejerciciosRutina = [];
 let indiceActual = 0;
 let video = null;
@@ -10,10 +11,24 @@ let audio = null;
 const videoContainer = document.getElementById("video-container");
 
 //Variables para pausas
+let tiempoTotal = 0;
 let tiempoRestante = 0;
+let tiempoFaltante = 0;
 let temporizador = null;
 let enPausa = false;
 let isPaused = false;
+let isSilenced = false;
+
+//Variables para reemplazar
+let duracionActual = 0;
+let ejercicioReemplazo = null;
+let indiceCambio = 0;
+
+//Variables para inicio y final
+let img = null;
+let tiempoImagen = 0;
+let audioIF = null;
+let temporizadorImg = null;
 
 
 //Botones de personaje
@@ -108,65 +123,84 @@ boton1.addEventListener("click", () => {
     duracion = 1;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton2.addEventListener("click", () => { 
     duracion = 2;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton3.addEventListener("click", () => { 
     duracion = 3;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton4.addEventListener("click", () => { 
     duracion = 4;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton5.addEventListener("click", () => { 
     duracion = 5;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton6.addEventListener("click", () => { 
     duracion = 6;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton7.addEventListener("click", () => { 
     duracion = 7;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton8.addEventListener("click", () => { 
     duracion = 8;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton9.addEventListener("click", () => { 
     duracion = 9;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
+
 boton10.addEventListener("click", () => { 
     duracion = 10;
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
     generarRutina();
 });
 
+// FUNCION GENERAR RUTINA
 function generarRutina() {
-    var ejerciciosFiltrados = [];
     var unidades = 0;
     var extra = 0;
 
@@ -189,27 +223,35 @@ function generarRutina() {
         }
     }
 
-    renderizarVideos(ejerciciosRutina[indiceActual], ejerciciosRutina[indiceActual].duracion);
-}
-
-function pasarEjercicio() {
-    indiceActual++;
-    if (indiceActual < ejerciciosRutina.length) {
-        const siguiente = ejerciciosRutina[indiceActual];
-        renderizarVideos(siguiente, siguiente.duracion);
-    } else {
-        finalizarRutina();
+    for (let index = 0; index < ejerciciosRutina.length; index++) {
+        tiempoTotal += ejerciciosRutina[index].duracion;
     }
+
+    inicio();
 }
 
+//FUNCION RENDERIZAR VIDEOS Y AUDIOS
 function renderizarVideos(ejercicio, duracion) {
-    video = document.createElement("video");
+    if (video != null) video.remove();
+    if (audio != null) audio.remove();
 
+    video = document.createElement("video");
     audio = document.createElement("audio");
 
     isPaused = false;
     video.id = "video";
-    video.autoplay = true;
+    video.preload = "auto";
+    audio.preload = "auto";
+
+    
+    if (isPaused || enPausa) {
+        video.autoplay = false;
+        audio.pause();
+        video.pause();
+    } else {
+        video.autoplay = true;
+    }
+
     video.loop = true;
     video.muted = true;
     video.setAttribute("playsinline", "");
@@ -223,13 +265,37 @@ function renderizarVideos(ejercicio, duracion) {
         videoContainer.appendChild(video);
 
         audio.src = "../" + ejercicio.audioMale;
-        audio.play();
+        audio.play().catch(err => {
+            if (err.name !== "AbortError") {
+                console.error("Error al reproducir el audio:", err);
+            }
+        });
+
+        if (isSilenced) {
+            audio.volume = 0
+        }
+
+        if (isPaused || enPausa) {
+            audio.pause();
+        }
     } else if (personaje == "female") {
         video.src = "../" + ejercicio.videosFemale.diagonal;
         videoContainer.appendChild(video);
 
         audio.src = "../" + ejercicio.audioFemale;
-        audio.play();
+        audio.play().catch(err => {
+            if (err.name !== "AbortError") {
+                console.error("Error al reproducir el audio:", err);
+            }
+        });
+
+        if (isSilenced) {
+            audio.volume = 0
+        }
+
+        if (isPaused || enPausa) {
+            audio.pause();
+        }
     }
 
     audio.addEventListener("ended", () => {
@@ -292,24 +358,40 @@ function renderizarVideos(ejercicio, duracion) {
 
     tiempoRestante = duracion;
     actualizarCronometro();
+    actualizarCronometroGeneral();
 
     if (temporizador) clearInterval(temporizador);
 
     temporizador = setInterval(() => {
         if (!enPausa) {
             tiempoRestante -= 1;
+            tiempoTotal -= 1;
             actualizarCronometro();
-            console.log(enPausa);
+            actualizarCronometroGeneral();
+            //console.log(enPausa);
 
             if (tiempoRestante <= 0) {
                 clearInterval(temporizador);
                 video.remove();
-                pasarEjercicio();   
+                audio.remove();
+                pasarEjercicio();
             }
         }
     }, 1000);
 }
 
+//FUNCION PARA SIGUIENTE EJERCICIO
+function pasarEjercicio() {
+    indiceActual++;
+    if (indiceActual < ejerciciosRutina.length) {
+        const siguiente = ejerciciosRutina[indiceActual];
+        renderizarVideos(siguiente, siguiente.duracion);
+    } else {
+        despedida();
+    }
+}
+
+//BOTON PAUSA
 botonPausa.addEventListener("click", () => { 
     if (botonPausa.value == "1") {
         if (enPausa) return;
@@ -323,7 +405,7 @@ botonPausa.addEventListener("click", () => {
 
         audio.pause();
 
-        console.log(enPausa);
+        //console.log(enPausa);
     } else {
         if (!enPausa) return;
         enPausa = false;
@@ -338,10 +420,53 @@ botonPausa.addEventListener("click", () => {
             audio.play();
         }
 
-        console.log(enPausa);
+        //console.log(enPausa);
     }
 });
 
+//BOTON SILENCIO
+botonSilencio.addEventListener("click", () => { 
+    if (botonSilencio.value == "1") {
+        botonSilencio.value = "0";
+        isSilenced = true;
+        audio.volume = 0;
+        document.getElementById("icono-silencio").classList.remove("hide");
+        document.getElementById("icono-sonido").classList.add("hide");
+    } else {
+        isSilenced = false;
+        botonSilencio.value = "1";
+        audio.volume = 1;
+        document.getElementById("icono-silencio").classList.add("hide");
+        document.getElementById("icono-sonido").classList.remove("hide");
+    }
+});
+
+//BOTON SALTAR
+botonSaltar.addEventListener("click", () => { 
+    saltar();
+});
+
+//BOTON REEMPLAZAR
+botonReemplazar.addEventListener("click", () => { 
+    duracionActual = ejerciciosRutina[indiceActual].duracion;
+
+    indiceCambio = Math.floor(Math.random() * ejerciciosFiltrados.length);
+
+    while (indiceActual == indiceCambio) {
+        indiceCambio = Math.floor(Math.random() * ejerciciosFiltrados.length);
+    }
+
+    ejercicioReemplazo = ejerciciosFiltrados[indiceCambio];
+
+    ejercicioReemplazo.duracion = duracionActual;
+    ejerciciosRutina.splice(indiceActual + 1, 0, ejercicioReemplazo);
+
+    tiempoTotal += duracionActual;
+
+    saltar();
+});
+
+//FUNCION PARA CRONOMETRO DE EJERCICIO
 function actualizarCronometro() {
     const cronometro = document.getElementById("time-ejercicio");
     const minutos = String(Math.floor(tiempoRestante / 60)).padStart(2, "0");
@@ -349,9 +474,208 @@ function actualizarCronometro() {
     cronometro.textContent = `${minutos}:${segundos}`;
 }
 
+function actualizarCronometroGeneral() {
+    const cronometro = document.getElementById("time-rutina");
+    const minutos = String(Math.floor(tiempoTotal / 60)).padStart(2, "0");
+    const segundos = String(tiempoTotal % 60).padStart(2, "0");
+    cronometro.textContent = `${minutos}:${segundos}`;
+}
+
+//FUNCION PARA CAMBIAR DE EJERCICIO
+function saltar() {
+    tiempoFaltante = ejerciciosRutina[indiceActual].duracion - Math.trunc(video.currentTime);
+
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.remove();
+    }
+
+    video.remove();
+    
+    tiempoTotal -= tiempoFaltante;
+    clearInterval(temporizador);
+    pasarEjercicio();
+}
+
+function inicio() {
+    img = document.createElement("img");
+    img.style.width = "100%";
+    if (personaje == "male") {
+        img.src = "../Img/Male.png";
+    } else {
+        img.src = "../Img/Female.png";
+    }
+    img.id = "img-despedida";
+    videoContainer.appendChild(img);
+
+    document.getElementById("angle-container").classList.add("hide");
+    document.getElementById("cronometroYControl").classList.add("hide");
+
+    if (personaje == "male") {
+        switch (intensidad) {
+            case "Baja":
+                tiempoImagen = 12;
+                audioIF = new Audio("../Audio/Male/4 Extras/IRB.mp3");
+                audioIF.play();
+                break;
+        
+            case "Media":
+                tiempoImagen = 11;
+                audioIF = new Audio("../Audio/Male/4 Extras/IRM.mp3");
+                audioIF.play();
+                break;
+    
+            case "Alta":
+                tiempoImagen = 19;
+                audioIF = new Audio("../Audio/Male/4 Extras/IRA.mp3");
+                audioIF.play();
+                break;
+    
+            default:
+                break;
+        }
+    } else if (personaje == "female") {
+        switch (intensidad) {
+            case "Baja":
+                tiempoImagen = 13;
+                audioIF = new Audio("../Audio/Female/4 Extras/IRB.mp3");
+                audioIF.play();
+                break;
+        
+            case "Media":
+                tiempoImagen = 13;
+                audioIF = new Audio("../Audio/Female/4 Extras/IRM.mp3");
+                audioIF.play();
+                break;
+    
+            case "Alta":
+                tiempoImagen = 22;
+                audioIF = new Audio("../Audio/Female/4 Extras/IRA.mp3");
+                audioIF.play();
+                break;
+    
+            default:
+                break;
+        }
+    }
+
+    temporizadorImg = setInterval(() => {
+        tiempoImagen -= 1;
+        if (tiempoImagen <= 0) {
+            clearInterval(temporizadorImg);
+            audioIF.remove();
+            img.remove();
+            document.getElementById("angle-container").classList.remove("hide");
+            document.getElementById("cronometroYControl").classList.remove("hide");
+            renderizarVideos(ejerciciosRutina[indiceActual], ejerciciosRutina[indiceActual].duracion);
+        }
+    }, 1000);
+}
+
+function despedida() {
+    audioIF = null;
+
+    img = document.createElement("img");
+    img.style.width = "100%";
+    if (personaje == "male") {
+        img.src = "../Img/Male.png";
+    } else {
+        img.src = "../Img/Female.png";
+    }
+    img.id = "img-despedida";
+
+    document.getElementById("angle-container").classList.add("hide");
+    document.getElementById("cronometroYControl").classList.add("hide");
+
+    videoContainer.appendChild(img);
+
+    if (personaje == "male") {
+        tiempoImagen = 18;
+        audioIF = new Audio("../Audio/Male/4 Extras/FR.mp3");
+        audioIF.play();
+    } else if (personaje == "female") {
+        tiempoImagen = 20;
+        audioIF = new Audio("../Audio/Female/4 Extras/FR.mp3");
+        audioIF.play();
+    }
+
+    temporizadorImg = setInterval(() => {
+        tiempoImagen -= 1;
+        if (tiempoImagen <= 0) {
+            clearInterval(temporizadorImg);
+            audioIF.remove();
+            document.getElementById("angle-container").classList.remove("hide");
+            document.getElementById("cronometroYControl").classList.remove("hide");
+            img.remove();
+            finalizarRutina();
+        }
+    }, 1000);
+}
+
+
+//FUNCION PARA ACABAR LA RUTINA
 function finalizarRutina() {
     clearInterval(temporizador);
+    clearInterval(temporizadorImg);
     if (video) video.remove();
     if (audio) audio.remove();
-    alert("¡Rutina completada!");
+    document.getElementById("rutina").classList.add("hide");
+    intensidades.forEach(intensidad => {
+        intensidad.setAttribute("disabled", "");
+    });
+    duraciones.forEach(duracion => {
+        duracion.setAttribute("disabled", "");
+    });
+
+    personaje = "";
+    intensidad = "";
+    duracion = 0;
+    ejerciciosFiltrados = [];
+    ejerciciosRutina = [];
+    indiceActual = 0;
+
+    tiempoTotal = 0;
+    tiempoRestante = 0;
+    tiempoFaltante = 0;
+    temporizador = null;
+    enPausa = false;
+    isPaused = false;
+    isSilenced = false;
+
+    duracionActual = 0;
+    ejercicioReemplazo = null;
+    indiceCambio = 0;
+
+    img = null;
+    tiempoImagen = 0;
+    temporizadorImg = null;
+
+    if (video != null) {
+        video.pause();
+        video.remove();
+        video = null;
+    }
+
+    if (audio != null) {
+        audio.pause();
+        audio.remove();
+        audio = null;
+    }
+
+    if (audioIF != null) {
+        audioIF.pause();
+        audioIF.remove();
+        audioIF = null;
+    }
+
+    videoContainer.innerHTML = "";
 }
+
+document.getElementById("boton-reiniciar").addEventListener("click", () => {
+    document.getElementById("reiniciar").classList.add("hide");
+    document.getElementById("rutina").classList.add("hide");
+    document.getElementById("selector").classList.remove("hide");
+
+    finalizarRutina();
+});
