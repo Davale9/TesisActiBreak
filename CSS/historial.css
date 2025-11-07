@@ -82,7 +82,7 @@ p {
     width: 90%;
 }
 
-img {
+.img-content {
     overflow: hidden;
     border-radius: 20px;
     width: 80%;

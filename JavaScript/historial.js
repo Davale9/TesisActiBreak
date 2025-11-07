@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let historial = JSON.parse(localStorage.getItem("historialRutina")) || [];
 
-    if (historial.lenght === 0) {
-        contenedor.innerHTML = "<h3 class='no-historial'>Aún no has realizado ninguna rutina.</h3>";
-        return;
+    if (!historial || historial.length === 0) {
+        contenedor.innerHTML += `<h3>Aún no has realizado ninguna rutina.</h3>`;
+        return
     }
 
     historial.forEach((r, index) => {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.color = colores[index % colores.length];
         card.innerHTML = `
             <div class="historial-info">
-                <img src="../Img/${r.personajeH === 'male' ? 'Male' : 'Female'}.png" alt="${r.personaje}">
+                <img src="../Img/${r.personajeH === 'male' ? 'Male' : 'Female'}.png" alt="${r.personaje}" class="img-content">
                 <h3>${r.fecha}</h3>
             </div>
         `;
@@ -47,7 +47,7 @@ function mostrarPopup(rutina, card) {
     popupContent.innerHTML += `
         <div class="content-child">
             <div class="popup-left">
-                <img src='../Img/${rutina.personajeH === 'male' ? 'Male' : 'Female'}.png' alt='${rutina.personaje}' id="img-popup">
+                <img src='../Img/${rutina.personajeH === 'male' ? 'Male' : 'Female'}.png' alt='${rutina.personaje}' id="img-popup" class="img-content">
             </div>
             <div class="popup-right">
                 <div class="arriba">
@@ -88,8 +88,6 @@ function mostrarPopup(rutina, card) {
         popup.classList.add("hide");
     }); 
 }
-
-
 
 window.addEventListener('keypress', (e) => {
     if (e.key == 'h') {
