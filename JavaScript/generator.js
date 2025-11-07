@@ -75,6 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
         ejerciciosTodos = data;
     });
+
+    const rutinaRehacer = localStorage.getItem("rutinaRehacer");
+    if (rutinaRehacer) {
+        const rutina = JSON.parse(rutinaRehacer);
+        generarRutinaDesdeHistorial(rutina);
+        localStorage.removeItem("rutinaRehacer"); // limpiar después de usarla
+    }
 });
 
 //Determinar personaje y activar o desactivar el resto de botones
@@ -223,9 +230,7 @@ function generarRutina() {
         }
     }
 
-    for (let index = 0; index < ejerciciosRutina.length; index++) {
-        tiempoTotal += ejerciciosRutina[index].duracion;
-    }
+    guardarRutinaHistorial();
 
     inicio();
 }
@@ -498,7 +503,59 @@ function saltar() {
     pasarEjercicio();
 }
 
+//FUNCION PARA GUARDAR LA RUTINA EN EL HISTORIAL
+function guardarRutinaHistorial() {
+    try {
+        let historial = JSON.parse(localStorage.getItem("historialRutina")) || [];
+
+        let nuevaRutina = {
+                fecha: new Date().toLocaleString("es-CO", {
+                    dateStyle: "short",
+                    timeStyle: "short",
+                }),
+                personajeH: personaje,
+                intensidadH: intensidad,
+                duracionH: duracion,
+                ejerciciosH: ejerciciosRutina
+        };
+
+        historial.unshift(nuevaRutina);
+
+        if (historial.length > 6) {
+            historial.pop();
+        }
+
+        localStorage.setItem("historialRutina", JSON.stringify(historial));
+        console.log("Rutina guardada en el historial.");
+    } catch (err) {
+        console.log("Error: " + err);
+    }
+}
+
+//FUNCION PARA GENERAR RUTINA DESDE EL HISTORIAL
+function generarRutinaDesdeHistorial(rutinaGuardada) {
+    console.log("Cargando rutina desde el historial");
+    document.getElementById("selector").classList.add("hide");
+    document.getElementById("rutina").classList.remove("hide");
+    document.getElementById("reiniciar").classList.remove("hide");
+
+    let { personajeH, intensidadH, duracionH, ejerciciosH } = rutinaGuardada;
+    
+    ejerciciosRutina = ejerciciosH;
+    personaje = personajeH;
+    intensidad = intensidadH;
+    duracion = duracionH;
+
+    inicio();
+}
+
+//FUNCION PARA INICIAR LA RUTINA Y BIENVENIDA
 function inicio() {
+    for (let index = 0; index < ejerciciosRutina.length; index++) {
+        tiempoTotal += ejerciciosRutina[index].duracion;
+    }
+
+
     img = document.createElement("img");
     img.style.width = "100%";
     if (personaje == "male") {
@@ -573,6 +630,7 @@ function inicio() {
     }, 1000);
 }
 
+//FUNCION PARA DESPEDIR AL USUARIO
 function despedida() {
     audioIF = null;
 
@@ -672,6 +730,7 @@ function finalizarRutina() {
     videoContainer.innerHTML = "";
 }
 
+//Botón que permite reiniciar el generador sin tener que recargar la página
 document.getElementById("boton-reiniciar").addEventListener("click", () => {
     document.getElementById("reiniciar").classList.add("hide");
     document.getElementById("rutina").classList.add("hide");

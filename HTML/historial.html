@@ -7,10 +7,14 @@
 
     <meta property="og:image" content="../IMG/Logo.png">
 
+    <!-- Enlace a JavaScript para generar el historial -->
+    <script defer src="../JavaScript/historial.js"></script>
+
     <!-- Enlace a hojas de estilos CSS -->
     <link rel="stylesheet" href="../CSS/header.css"><style></style>
     <link rel="stylesheet" href="../CSS/cardHistory.css"><style></style>
     <link rel="stylesheet" href="../CSS/neon.css"><style></style>
+    <link rel="stylesheet" href="../CSS/historial.css"><style></style>
 
     <!-- Google Fonts -->
     <!-- Nombre de la aplicación-->
@@ -56,8 +60,16 @@
     </div>
     <div class="main-content">
         <div class="main-card-parent">
-            <div class="historic">
+            <div class="historial">
+                <div id="contenedor-historial" class="grid-historial"></div>
+                    
+                    <div id="popup-historial" class="popup hide">
+                        <div class="popup-content" id="popup-content">
+                            
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
         <div class="three-card-parent">
