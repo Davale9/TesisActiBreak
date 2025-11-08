@@ -238,10 +238,12 @@ function generarRutina() {
 //FUNCION RENDERIZAR VIDEOS Y AUDIOS
 function renderizarVideos(ejercicio, duracion) {
     if (video != null) video.remove();
-    if (audio != null) audio.remove();
+    if (!audio) {
+        audio = document.createElement("audio");
+    }
 
     video = document.createElement("video");
-    audio = document.createElement("audio");
+    
 
     isPaused = false;
     video.id = "video";
