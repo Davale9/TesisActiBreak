@@ -575,19 +575,22 @@ function inicio() {
         switch (intensidad) {
             case "Baja":
                 tiempoImagen = 12;
-                audioIF = new Audio("../Audio/Male/4 Extras/IRB.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Male/4 Extras/IRB.mp3";
                 audioIF.play();
                 break;
         
             case "Media":
                 tiempoImagen = 11;
-                audioIF = new Audio("../Audio/Male/4 Extras/IRM.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Male/4 Extras/IMB.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 19;
-                audioIF = new Audio("../Audio/Male/4 Extras/IRA.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Male/4 Extras/IAB.mp3";
                 audioIF.play();
                 break;
     
@@ -598,19 +601,22 @@ function inicio() {
         switch (intensidad) {
             case "Baja":
                 tiempoImagen = 13;
-                audioIF = new Audio("../Audio/Female/4 Extras/IRB.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Female/4 Extras/IRB.mp3";
                 audioIF.play();
                 break;
         
             case "Media":
                 tiempoImagen = 13;
-                audioIF = new Audio("../Audio/Female/4 Extras/IRM.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Female/4 Extras/IMB.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 22;
-                audioIF = new Audio("../Audio/Female/4 Extras/IRA.mp3");
+                audioIF = document.createElement("audio");
+                audioIF.src = "../Audio/Female/4 Extras/IAB.mp3";
                 audioIF.play();
                 break;
     
@@ -623,7 +629,6 @@ function inicio() {
         tiempoImagen -= 1;
         if (tiempoImagen <= 0) {
             clearInterval(temporizadorImg);
-            audioIF.remove();
             img.remove();
             document.getElementById("angle-container").classList.remove("hide");
             document.getElementById("cronometroYControl").classList.remove("hide");
@@ -634,8 +639,6 @@ function inicio() {
 
 //FUNCION PARA DESPEDIR AL USUARIO
 function despedida() {
-    audioIF = null;
-
     img = document.createElement("img");
     img.style.width = "100%";
     if (personaje == "male") {
@@ -652,11 +655,11 @@ function despedida() {
 
     if (personaje == "male") {
         tiempoImagen = 18;
-        audioIF = new Audio("../Audio/Male/4 Extras/FR.mp3");
+        audioIF.src ="../Audio/Male/4 Extras/FR.mp3";
         audioIF.play();
     } else if (personaje == "female") {
         tiempoImagen = 20;
-        audioIF = new Audio("../Audio/Female/4 Extras/FR.mp3");
+        audioIF.src ="../Audio/Female/4 Extras/FR.mp3";
         audioIF.play();
     }
 
