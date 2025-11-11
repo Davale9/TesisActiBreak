@@ -535,6 +535,8 @@ function guardarRutinaHistorial() {
 
 //FUNCION PARA GENERAR RUTINA DESDE EL HISTORIAL
 function generarRutinaDesdeHistorial(rutinaGuardada) {
+    finalizarRutina();
+
     console.log("Cargando rutina desde el historial");
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
