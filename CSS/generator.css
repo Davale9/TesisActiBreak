@@ -248,6 +248,12 @@ video {
 
 #boton-reiniciar {
     width: 50%;
+    height: 40px;
+}
+
+#boton-desdeHistorial {
+    width: 50%;
+    height: 40px;
 }
 
 @media (max-width: 1000px) {

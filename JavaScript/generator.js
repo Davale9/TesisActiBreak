@@ -9,6 +9,7 @@ let indiceActual = 0;
 let video = null;
 let audio = null;
 const videoContainer = document.getElementById("video-container");
+let rutina = null;
 
 //Variables para pausas
 let tiempoTotal = 0;
@@ -78,8 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const rutinaRehacer = localStorage.getItem("rutinaRehacer");
     if (rutinaRehacer) {
-        const rutina = JSON.parse(rutinaRehacer);
-        generarRutinaDesdeHistorial(rutina);
+        rutina = JSON.parse(rutinaRehacer);
+        document.getElementById("selector").classList.add("hide");
+        document.getElementById("desde-historial").classList.remove("hide");
         localStorage.removeItem("rutinaRehacer"); // limpiar después de usarla
     }
 });
@@ -733,6 +735,12 @@ function finalizarRutina() {
 
     videoContainer.innerHTML = "";
 }
+
+//Botón que permite reiniciar el generador sin tener que recargar la página
+document.getElementById("boton-desdeHistorial").addEventListener("click", () => {
+    generarRutinaDesdeHistorial(rutina);
+    document.getElementById("desde-historial").classList.add("hide");
+});
 
 //Botón que permite reiniciar el generador sin tener que recargar la página
 document.getElementById("boton-reiniciar").addEventListener("click", () => {

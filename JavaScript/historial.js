@@ -81,6 +81,7 @@ function mostrarPopup(rutina, card) {
     botonReiniciar.addEventListener("click", () => {
         localStorage.setItem("rutinaRehacer", JSON.stringify(rutina));
         window.location.href = "https://davale9.github.io/TesisActiBreak/HTML/Generador.html";
+        //window.location.href = "Generador.html";
     });
 
     botonCerrar.addEventListener("click", () => {
