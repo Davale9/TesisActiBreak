@@ -8,7 +8,7 @@
 
 /* Tarjeta azul - morado */
 
-.blue-purple::after, .blue-purple::before {
+.blue-purple-after, .blue-purple-before {
     content: '';
     position: absolute;
     height: 100%;
@@ -23,7 +23,7 @@
     animation: 3s spin linear infinite;
 }
 
-.blue-purple::before {
+.blue-purple-before {
     padding: 0px;
     filter: blur(2rem);
     /*animation: 3s pulseShadow linear infinite;*/
@@ -32,7 +32,7 @@
 
 /* Tarjeta rojo - naranja */
 
-.red-orange::after, .red-orange::before {
+.red-orange-after, .red-orange-before {
     content: '';
     position: absolute;
     height: 100%;
@@ -47,7 +47,7 @@
     animation: 3s spin linear infinite;
 }
 
-.red-orange::before {
+.red-orange-before {
     padding: 0px;
     filter: blur(2rem);
     opacity: 1;
@@ -55,7 +55,7 @@
 
 /* Tarjeta verde - amarillo */
 
-.yellow-green::after, .yellow-green::before {
+.yellow-green-after, .yellow-green-before {
     content: '';
     position: absolute;
     height: 100%;
@@ -70,7 +70,7 @@
     animation: 3s spin linear infinite;
 }
 
-.yellow-green::before {
+.yellow-green-before {
     padding: 0px;
     filter: blur(2rem);
     opacity: 1;
