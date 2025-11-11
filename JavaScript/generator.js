@@ -556,6 +556,10 @@ function inicio() {
         tiempoTotal += ejerciciosRutina[index].duracion;
     }
 
+    if (!audioIF) {
+        audioIF = document.createElement("audio");
+    }
+
 
     img = document.createElement("img");
     img.style.width = "100%";
@@ -574,21 +578,18 @@ function inicio() {
         switch (intensidad) {
             case "Baja":
                 tiempoImagen = 12;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Male/4 Extras/IRB.mp3";
                 audioIF.play();
                 break;
         
             case "Media":
                 tiempoImagen = 11;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Male/4 Extras/IRM.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 19;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Male/4 Extras/IRA.mp3";
                 audioIF.play();
                 break;
@@ -600,21 +601,18 @@ function inicio() {
         switch (intensidad) {
             case "Baja":
                 tiempoImagen = 13;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Female/4 Extras/IRB.mp3";
                 audioIF.play();
                 break;
         
             case "Media":
                 tiempoImagen = 13;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Female/4 Extras/IRM.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 22;
-                audioIF = document.createElement("audio");
                 audioIF.src = "../Audio/Female/4 Extras/IRA.mp3";
                 audioIF.play();
                 break;
