@@ -495,7 +495,6 @@ function saltar() {
     if (audio) {
         audio.pause();
         audio.currentTime = 0;
-        audio.remove();
     }
 
     video.remove();
@@ -583,14 +582,14 @@ function inicio() {
             case "Media":
                 tiempoImagen = 11;
                 audioIF = document.createElement("audio");
-                audioIF.src = "../Audio/Male/4 Extras/IMB.mp3";
+                audioIF.src = "../Audio/Male/4 Extras/IRM.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 19;
                 audioIF = document.createElement("audio");
-                audioIF.src = "../Audio/Male/4 Extras/IAB.mp3";
+                audioIF.src = "../Audio/Male/4 Extras/IRA.mp3";
                 audioIF.play();
                 break;
     
@@ -609,14 +608,14 @@ function inicio() {
             case "Media":
                 tiempoImagen = 13;
                 audioIF = document.createElement("audio");
-                audioIF.src = "../Audio/Female/4 Extras/IMB.mp3";
+                audioIF.src = "../Audio/Female/4 Extras/IRM.mp3";
                 audioIF.play();
                 break;
     
             case "Alta":
                 tiempoImagen = 22;
                 audioIF = document.createElement("audio");
-                audioIF.src = "../Audio/Female/4 Extras/IAB.mp3";
+                audioIF.src = "../Audio/Female/4 Extras/IRA.mp3";
                 audioIF.play();
                 break;
     
@@ -737,9 +736,11 @@ function finalizarRutina() {
 
 //Botón que permite reiniciar el generador sin tener que recargar la página
 document.getElementById("boton-reiniciar").addEventListener("click", () => {
-    document.getElementById("reiniciar").classList.add("hide");
-    document.getElementById("rutina").classList.add("hide");
-    document.getElementById("selector").classList.remove("hide");
+    //document.getElementById("reiniciar").classList.add("hide");
+    //document.getElementById("rutina").classList.add("hide");
+    //document.getElementById("selector").classList.remove("hide");
 
     finalizarRutina();
+
+    window.location.reload();
 });

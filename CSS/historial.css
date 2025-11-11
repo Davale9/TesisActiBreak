@@ -176,6 +176,7 @@ p {
 }
 
 #boton-repetir {
+    cursor: pointer;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     font-weight: bold;

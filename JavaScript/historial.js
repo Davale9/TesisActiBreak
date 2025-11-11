@@ -80,7 +80,7 @@ function mostrarPopup(rutina, card) {
 
     botonReiniciar.addEventListener("click", () => {
         localStorage.setItem("rutinaRehacer", JSON.stringify(rutina));
-        window.location.href = "Generador.html";
+        window.location.href = "https://davale9.github.io/TesisActiBreak/HTML/Generador.html";
     });
 
     botonCerrar.addEventListener("click", () => {
@@ -89,8 +89,10 @@ function mostrarPopup(rutina, card) {
     }); 
 }
 
+/*
 window.addEventListener('keypress', (e) => {
     if (e.key == 'h') {
         localStorage.removeItem("historialRutina")
     }
 })
+*/
