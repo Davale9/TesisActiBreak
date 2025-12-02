@@ -746,5 +746,48 @@
         "descripción": "Guau, ¡muy bien! Terminamos la rutina. Estuvo interesante ¿verdad? ¿Qué tal te sientes? Espero que hayas bajado el estrés y puedas seguir realizando tus labores. Te espero muy pronto en tu siguiente pausa activa. Gracias por usar ActiBreik: La Pausa que Activa tu Día.",
         "audio male": "Audio/Male/4 Extras/FR.mp3",
         "audio female": "Audio/Female/4 Extras/FR.mp3"
+    },
+
+    {
+        "id": "A1",
+        "nombre": "Animos 1",
+        "tipo": "Animo",
+        "descripción": "¡Vas muy bien!",
+        "audioMale": "Audio/Male/5 Animos/1.mp3",
+        "audioFemale": "Audio/Female/5 Animos/1.mp3"
+    },
+
+    {
+        "id": "A2",
+        "nombre": "Animos 2",
+        "tipo": "Animo",
+        "descripción": "Estás a punto de acabar",
+        "audioMale": "Audio/Male/5 Animos/2.mp3",
+        "audioFemale": "Audio/Female/5 Animos/2.mp3"
+    },
+
+    {
+        "id": "A3",
+        "nombre": "Animos 3",
+        "tipo": "Animo",
+        "descripción": "Eso, ¡sigue así!",
+        "audioMale": "Audio/Male/5 Animos/3.mp3",
+        "audioFemale": "Audio/Female/5 Animos/3.mp3"
+    },
+
+    {
+        "id": "A4",
+        "nombre": "Animos 4",
+        "tipo": "Animo",
+        "descripción": "Continúa, ¡ya casi acabas!",
+        "audioMale": "Audio/Male/5 Animos/4.mp3",
+        "audioFemale": "Audio/Female/5 Animos/4.mp3"
+    },
+
+    {
+        "id": "Song",
+        "tipo": "Animo",
+        "nombre": "Música de Rutina",
+        "audio": "Audio/Song.mp3"
     }
 ]
