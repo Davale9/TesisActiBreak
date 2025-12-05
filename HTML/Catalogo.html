@@ -10,6 +10,7 @@
 
     <!-- Enlace a JavaScript para generar las tarjetas de los ejercicios -->
     <script defer src="../JavaScript/catalog.js"></script>
+    <script async src="../JavaScript/color.js"></script>
 
     <!-- Enlace a hojas de estilos CSS -->
     <link rel="stylesheet" href="../CSS/header.css"><style></style>
@@ -19,11 +20,6 @@
 
 
     <!-- Google Fonts -->
-    <!-- Nombre de la aplicación-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!--Títulos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +29,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
     <header>
@@ -52,13 +46,13 @@
             <a href="../HTML/historial.html" class="header-history">
                  <div class="header-history">
                     <img src="../Img/Historial.png" alt="Logo de historial">
-                    <h2>Historial</h2>
+                    <h1>Historial</h1>
                 </div>
             </a>
         </div>
     </header>
     <div class="Title">
-        <h1>Catálogo de Ejercicios</h1>
+        <h2>Catálogo de Ejercicios</h2>
     </div>
     <div class="main-content">
         <div class="main-card-parent">
@@ -88,15 +82,21 @@
                 </div>
                 <div id="popup" class="popup hide">
                     <div class="popup-content" id="popup-content">
-                        <div class="popup-left">
-                            <video id="video-popup" autoplay loop muted playsinline webkit-playsinline></video>
-                            <button id="toggle-personaje" class="btn-personaje">Cambiar personaje</button>
+                        <div class="popup-up">
+                            <button id="close-popup" class="close-btn">X</button>
                         </div>
-                        <div class="popup-right">
-                            <h2 id="popup-nombre"></h2>
-                            <p id="popup-descripcion"></p>
+                        <div class="popup-down">
+                            <div class="popup-left">
+                                <div class="video-container">
+                                    <video id="video-popup" autoplay loop muted playsinline webkit-playsinline></video>
+                                </div>
+                                <button id="toggle-personaje" class="btn-personaje">Cambiar personaje</button>
+                            </div>
+                            <div class="popup-right">
+                                <h5 id="popup-nombre">Nombre</h5>
+                                <p id="popup-descripcion"></p>
+                            </div>
                         </div>
-                        <button id="close-popup" class="close-btn">X</button>
                     </div>
                 </div>
 
@@ -123,5 +123,33 @@
             </a>
         </div>
     </div>
+
+    <footer>
+        <div class="gradient">
+
+        </div>
+        <div class="footer-parent">
+            <a href="../HTML/about.html" class="footer-child">
+                 <div class="footer-about">
+                    <img src="../Img/Informacion.png" alt="Icono de Información">
+                    <h1>Acerca de</h1>
+                </div>
+            </a>
+            <a href="../HTML/manual.html" class="footer-child">
+                 <div class="footer-manual">
+                    <h1>Manual de Usuario</h1>
+                </div>
+            </a>
+            <a href="../HTML/config.html" class="footer-child">
+                 <div class="footer-config">
+                    <img src="../Img/Config.png" alt="Icono de configuración">
+                    <h1>Configuración</h1>
+                </div>
+            </a>
+        </div>
+        <div class="autoría">
+            <h6>Desarrollado por David Pineda - 2025</h6>
+        </div>
+    </footer>
 </body>
 </html>

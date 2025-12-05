@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiBreak - Configuración</title>
+
+    <meta property="og:image" content="../Img/Logo.png">
+    <link rel="icon" href="../Img/Logo.png">
+
+    <!-- Enlace a JavaScript para las configuraciones -->
+    <script defer src="../JavaScript/config.js"></script>
+
+    <!-- Enlace a hojas de estilos CSS -->
+    <link rel="stylesheet" href="../CSS/header.css"><style></style>
+    <link rel="stylesheet" href="../CSS/cardFooter.css"><style></style>
+    <link rel="stylesheet" href="../CSS/neon.css"><style></style>
+    <link rel="stylesheet" href="../CSS/config.css"><style></style>
+
+
+    <!-- Google Fonts -->
+    <!--Títulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!--Párrafos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-parent">
+            <a href="../index.html" class="header-icon">
+                <div class="header-icon">
+                    <img src="../Img/Logo.png" alt="Logo de la aplicación">
+                </div>
+            </a>
+            <a href="../index.html" class="header-name">
+                <div class="header-name">
+                    <img src="../Img/Nombre.png" alt="Imagen con el nombre de la aplicación, degradado de azul a morado">
+                </div>
+            </a>
+            <a href="../HTML/historial.html" class="header-history">
+                 <div class="header-history">
+                    <img src="../Img/Historial.png" alt="Logo de historial">
+                    <h1>Historial</h1>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Configuración</h2>
+
+        <div class="configuraciones">
+            <div class="configuracion cuenta">
+                <div class="texto-config">
+                    <h3>Cuenta:</h3>
+                    <p>Crea tu cuenta para guardar tus rutinas de pausas activas.</p>
+                </div>
+                <button id="crear-cuenta">Crear Cuenta</button>
+            </div>
+            <div class="configuracion color">
+                <div class="texto-config">
+                    <h3>Color:</h3>
+                    <p>Ajusta la saturación de los colores a tu gusto.</p>
+                </div>
+                <div class="controles">
+                    <input type="range" id="saturation" name="saturation" min="50" max="100" value="100">
+                    <button id="reset">Restablecer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="three-card-parent">
+            <a href="../HTML/Generador.html" class="first-card">
+                <div class="first-card blue-purple">
+
+                    <div class="blue-purple-before"></div>
+                    <div class="blue-purple-after"></div>
+
+                    <h4 class="title-first">Personaliza tu Pausa Activa</h4>
+                </div>
+            </a>
+            <a href="../HTML/Importancia.html" class="second-card">
+                <div class="second-card red-orange">
+
+                    <div class="red-orange-before"></div>
+                    <div class="red-orange-after"></div>
+
+                    <h4 class="title-second">Importancia de las Pausas Activas</h4>
+                </div>
+            </a>
+            <a href="../HTML/Catalogo.html" class="third-card">
+                <div class="third-card yellow-green">
+
+                    <div class="yellow-green-before"></div>
+                    <div class="yellow-green-after"></div>
+
+                    <h4 class="title-third">Catálogo de Ejercicios</h4>
+                </div>
+            </a>
+        </div>
+
+        <div id="popup" class="popup hide">
+            <div class="popup-content" id="popup-content">
+                <div class="popup-up">
+                    <button id="close-popup" class="close-btn">X</button>
+                </div>
+                <div class="popup-down">
+                    <p>Función no disponible actualmente.</p>
+                    <p>Sigue pendiente de nuetras futuras actualizaciones.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="gradient">
+
+        </div>
+        <div class="footer-parent">
+            <a href="../HTML/about.html" class="footer-child">
+                 <div class="footer-about">
+                    <img src="../Img/Informacion.png" alt="Icono de Información">
+                    <h1>Acerca de</h1>
+                </div>
+            </a>
+            <a href="../HTML/manual.html" class="footer-child">
+                 <div class="footer-manual">
+                    <h1>Manual de Usuario</h1>
+                </div>
+            </a>
+            <a href="../HTML/config.html" class="footer-child">
+                 <div class="footer-config">
+                    <img src="../Img/Config.png" alt="Icono de configuración">
+                    <h1>Configuración</h1>
+                </div>
+            </a>
+        </div>
+        <div class="autoría">
+            <h6>Desarrollado por David Pineda - 2025</h6>
+        </div>
+    </footer>
+</body>
+</html>

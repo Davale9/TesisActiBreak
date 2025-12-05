@@ -10,6 +10,7 @@
 
     <!-- Enlace a JavaScript para generar las tarjetas de los ejercicios -->
     <script defer src="../JavaScript/generator.js"></script>
+    <script async src="../JavaScript/color.js"></script>
 
     <!-- Enlace a hojas de estilos CSS -->
     <link rel="stylesheet" href="../CSS/header.css"><style></style>
@@ -18,11 +19,6 @@
     <link rel="stylesheet" href="../CSS/generator.css"><style></style>
 
     <!-- Google Fonts -->
-    <!-- Nombre de la aplicación-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!--Títulos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,13 +47,13 @@
             <a href="../HTML/historial.html" class="header-history">
                  <div class="header-history">
                     <img src="../Img/Historial.png" alt="Logo de historial">
-                    <h2>Historial</h2>
+                    <h1>Historial</h1>
                 </div>
             </a>
         </div>
     </header>
     <div class="Title">
-        <h1>Generador de Rutinas Personalizadas</h1>
+        <h2>Generador de Rutinas Personalizadas</h2>
     </div>
     <div class="main-content">
         <div class="main-card-parent">
@@ -68,7 +64,7 @@
 
                 <div class="selector-parent" id="selector">
                     <div class="character-selector">
-                        <h3>Escoge tu personaje</h3>
+                        <h3>Paso 1:<br>Escoge tu personaje</h3>
                         <div class="characters">
                             <button class="character-images" id="Male">
                                 <img src="../Img/Male.png" alt="Imagen del personaje masculino">
@@ -79,7 +75,7 @@
                         </div>
                     </div>
                     <div class="intensity-selector">
-                        <h3>Escoge la intensidad</h3>
+                        <h3>Paso 2:<br>Escoge la intensidad</h3>
                         <div class="intensities">
                             <button class="button-intensity disabled" id="Baja" disabled>Baja</button>
                             <button class="button-intensity disabled" id="Media" disabled>Media</button>
@@ -87,31 +83,41 @@
                         </div>
                     </div>
                     <div class="duration-selector">
-                        <h3>Escoge la duración</h3>
+                        <h3>Paso 3:<br>Escoge la duración</h3>
                         <div class="durations">
-                            <button class="button-duration disabled" id="1" disabled>1</button>
-                            <button class="button-duration disabled" id="2" disabled>2</button>
-                            <button class="button-duration disabled" id="3" disabled>3</button>
-                            <button class="button-duration disabled" id="4" disabled>4</button>
-                            <button class="button-duration disabled" id="5" disabled>5</button>
-                            <button class="button-duration disabled" id="6" disabled>6</button>
-                            <button class="button-duration disabled" id="7" disabled>7</button>
-                            <button class="button-duration disabled" id="8" disabled>8</button>
-                            <button class="button-duration disabled" id="9" disabled>9</button>
-                            <button class="button-duration disabled" id="10" disabled>10</button>
+                            <select name="Minutos" id="minutos" disabled>
+                                <option class="button-duration disabled" value="Base">Minutos</option>
+                                <option class="button-duration disabled" value="1">1 minuto</option>
+                                <option class="button-duration disabled" value="2">2 minutos</option>
+                                <option class="button-duration disabled" value="3">3 minutos</option>
+                                <option class="button-duration disabled" value="4">4 minutos</option>
+                                <option class="button-duration disabled" value="5">5 minutos</option>
+                                <option class="button-duration disabled" value="6">6 minutos</option>
+                                <option class="button-duration disabled" value="7">7 minutos</option>
+                                <option class="button-duration disabled" value="8">8 minutos</option>
+                                <option class="button-duration disabled" value="9">9 minutos</option>
+                                <option class="button-duration disabled" value="10">10 minutos</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="generate-routine" id="generate-routine">
+                        <h3>Paso 4:</h3>
+                        <button id="generar-rutina" class="btn-generar disabled" disabled>Generar Rutina</button>
                     </div>
                 </div>
 
                 <div class="routine hide" id="rutina">
                     <h3>Sigue los ejercicios mostrados en pantalla</h3>
+                    <div class="progreso transparent" id="progreso-parent">
+                        <h5 id="progreso-ejercicio">Ejercicio 0/0</h5>
+                    </div>
                     <div class="routine-parent">
                         <div class="routine-element" id="angle-container">
                             <button class="button-angle" id="Frente">Ángulo 1 (Frente)</button>
                             <button class="button-angle" id="Diagonal">Ángulo 2 (Diagonal)</button>
                             <button class="button-angle" id="Lado">Ángulo 3 (Lado)</button>
                         </div>
-                        <div class="routine-element">
+                        <div class="routine-element video-principal">
                             <div id="video-container">
 
                             </div>
@@ -126,11 +132,21 @@
                                 <h5>Ejercicio</h5>
                             </div>
                             <div class="controls">
-                                <button class="button-control" id="Pausa" value="1"><img src="../Img/Pausa.png" alt="icono de pausa" class="iconos" id="icono-pausa"><img src="../Img/Play.png" alt="icono de play" class="iconos hide" id="icono-play"></button>
-                                <button class="button-control" id="Silencio" value="1"><img src="../Img/Silencio.png" alt="icono de silencio" class="iconos hide" id="icono-silencio"><img src="../Img/Sonido.png" alt="icono de sonido" class="iconos" id="icono-sonido"></button>
-                                <button class="button-control" id="Saltar"><img src="../Img/Saltar.png" alt="Icono de saltar" class="iconos"></button>
-                                <button class="button-control" id="Reemplazar"><img src="../Img/Cambio.png" alt="Icono de reemplazar" class="iconos"></button>
+                                <button class="button-control" id="Pausa" title="Pausa" value="1"><img src="../Img/Pausa.png" alt="icono de pausa" class="iconos" id="icono-pausa"><img src="../Img/Play.png" alt="icono de play" class="iconos hide" id="icono-play"></button>
+                                <button class="button-control" id="Silencio" title="Silencio" value="1"><img src="../Img/Silencio.png" alt="icono de silencio" class="iconos hide" id="icono-silencio"><img src="../Img/Sonido.png" alt="icono de sonido" class="iconos" id="icono-sonido"></button>
+                                <button class="button-control" id="Saltar" title="Saltar"><img src="../Img/Saltar.png" alt="Icono de saltar" class="iconos"></button>
+                                <button class="button-control" id="Reemplazar" title="Reemplazar"><img src="../Img/Cambio.png" alt="Icono de reemplazar" class="iconos"></button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="variables">
+                        <div class="intensidad">
+                            <h3>Intensidad:</h3>
+                            <h5 id="intendidad-p"></h5>
+                        </div>
+                        <div class="duracion">
+                            <h3>Duración:</h3>
+                            <h5 id="duracion-p"></h5>
                         </div>
                     </div>
                 </div>
@@ -168,5 +184,33 @@
             </a>
         </div>
     </div>
+
+    <footer>
+        <div class="gradient">
+
+        </div>
+        <div class="footer-parent">
+            <a href="../HTML/about.html" class="footer-child">
+                 <div class="footer-about">
+                    <img src="../Img/Informacion.png" alt="Icono de Información">
+                    <h1>Acerca de</h1>
+                </div>
+            </a>
+            <a href="../HTML/manual.html" class="footer-child">
+                 <div class="footer-manual">
+                    <h1>Manual de Usuario</h1>
+                </div>
+            </a>
+            <a href="../HTML/config.html" class="footer-child">
+                 <div class="footer-config">
+                    <img src="../Img/Config.png" alt="Icono de configuración">
+                    <h1>Configuración</h1>
+                </div>
+            </a>
+        </div>
+        <div class="autoría">
+            <h6>Desarrollado por David Pineda - 2025</h6>
+        </div>
+    </footer>
 </body>
 </html>

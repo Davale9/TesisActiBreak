@@ -37,19 +37,26 @@ function renderEjercicios() {
         .filter(e => (e.enfoque != null))
         .forEach(e => {
             const card = document.createElement("div");
+            const cardLeft = document.createElement("div");
+            const cardRight = document.createElement("div");
             card.classList.add("card");
+            cardLeft.classList.add("card-left");
+            cardRight.classList.add("card-right");
+            card.appendChild(cardLeft);
+            card.appendChild(cardRight);
 
             card.style.border = "3px solid " + e.color;
             card.style.boxShadow = "0px 0px 10px " + e.color;
 
             const img = document.createElement("img");
             img.src = "../" + e.portada;
-            card.appendChild(img);
+            img.alt = "Imagen del ejercicio: " + e.nombre;
+            cardLeft.appendChild(img);
 
             const title = document.createElement("h3");
             title.textContent = e.nombre;
             title.style.color = e.color;
-            card.appendChild(title);
+            cardRight.appendChild(title);
 
             // Hover → video inline
             card.addEventListener("mouseenter", () => {
@@ -60,7 +67,7 @@ function renderEjercicios() {
                 video.muted = true;
                 video.setAttribute("playsinline", "");
                 video.setAttribute("webkit-playsinline", "");
-                video.style.width = "50%";
+                video.style.width = "100%";
                 img.replaceWith(video);
             });
 

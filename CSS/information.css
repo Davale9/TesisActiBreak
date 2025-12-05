@@ -1,6 +1,7 @@
 h5 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
+    font-style: italic;
     font-size: 2em;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -62,6 +63,10 @@ h5, p, img.imagen, div.imagenes {
     text-align: left;
 }
 
+.image {
+    padding-top: 20px;
+}
+
 div.imagenes {
     display: flex;
     flex-direction: column;
@@ -114,7 +119,7 @@ li.pink-list {
         font-size: 1.5em;
     }
 
-    h5.extra {
+    div.extra {
         display: none;
     }
 
@@ -164,7 +169,7 @@ li.pink-list {
         text-align: center;
     }
 
-    h5.extra {
+    div.extra {
         display: none;
 
     }

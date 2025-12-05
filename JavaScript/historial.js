@@ -46,23 +46,27 @@ function mostrarPopup(rutina, card) {
     popup.classList.remove("hide");
     popupContent.innerHTML += `
         <div class="content-child">
-            <div class="popup-left">
-                <img src='../Img/${rutina.personajeH === 'male' ? 'Male' : 'Female'}.png' alt='${rutina.personaje}' id="img-popup" class="img-content">
+            <div class="popup-up">
+                <button id="boton-cerrar" class="close-btn">X</button>
             </div>
-            <div class="popup-right">
-                <div class="arriba">
-                    <h3>${rutina.fecha}</h3>
-                    <p><strong>Intensidad:</strong> <br>${rutina.intensidadH}</p>
-                    <p><strong>Duración:</strong> <br>${rutina.duracionH} min</p>
+            <div class="popup-down">
+                <div class="popup-left">
+                    <img src='../Img/${rutina.personajeH === 'male' ? 'Male' : 'Female'}.png' alt='${rutina.personaje}' id="img-popup" class="img-content">
                 </div>
-                <div class="abajo">
-                    <p><strong>Ejercicios incluidos:</strong></p>
-                    <p class="lista-ejercicios">
-                        ${rutina.ejerciciosH.map(e => e.nombre).join("<br>")}
-                    </p>
+                <div class="popup-right">
+                    <div class="arriba">
+                        <h3>${rutina.fecha}</h3>
+                        <p><strong>Intensidad:</strong> <br>${rutina.intensidadH}</p>
+                        <p><strong>Duración:</strong> <br>${rutina.duracionH} min</p>
+                    </div>
+                    <div class="abajo">
+                        <p><strong>Ejercicios incluidos:</strong></p>
+                        <p class="lista-ejercicios">
+                            ${rutina.ejerciciosH.map(e => e.nombre).join("<br>")}
+                        </p>
+                    </div>
                 </div>
             </div>
-            <button id="boton-cerrar" class="close-btn">X</button>
         </div>
         <div class="content-child">
             <button id="boton-repetir" class="repetir">Repetir Rutina</button>      
