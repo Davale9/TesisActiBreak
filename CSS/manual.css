@@ -104,3 +104,66 @@ p {
 iframe {
     align-self: center;
 }
+
+@media (max-width: 1200px) {
+    .manual-content {
+        width: 90%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 850px) {
+    .manual-content {
+        width: 80%;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .manual-content {
+        width: 70%;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 425px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
