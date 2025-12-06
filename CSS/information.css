@@ -1,4 +1,4 @@
-h5 {
+h3 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -7,11 +7,11 @@ h5 {
     margin-bottom: 15px;
 }
 
-.impar > div > h5 {
+.impar > div > h3 {
     color: #FF3366 ;
 }
 
-.par > div > h5 {
+.par > div > h3 {
     color: #FF9933 ;
 }
 
@@ -115,7 +115,7 @@ li.pink-list {
 }
 
 @media (max-width: 1000px) {
-    h5 {
+    h3 {
         font-size: 1.5em;
     }
 
@@ -146,7 +146,7 @@ li.pink-list {
         gap: 0px;
     }
 
-    h5, p, img.imagen, div.imagenes {
+    h3, p, img.imagen, div.imagenes {
         text-align: left;
     }
 
@@ -164,7 +164,7 @@ li.pink-list {
 }
 
 @media (max-width: 600px) {
-    h5 {
+    h3 {
         font-size: 1.2em;
         text-align: center;
     }
