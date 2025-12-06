@@ -246,7 +246,7 @@ function inicio() {
     audioMusica.preload = "auto";
 
     audioMusica.loop = true;
-    audioMusica.volume = 0.03;
+    audioMusica.volume = 1;
 
     audioMusica.play().catch(err => {
         if (err.name !== "AbortError") {
@@ -741,7 +741,7 @@ botonSilencio.addEventListener("click", () => {
         botonSilencio.value = "1";
         audio.volume = 1;
         audioAnimo.volume = 1;
-        audioMusica.volume = 0.03;
+        audioMusica.volume = 1;
         document.getElementById("icono-silencio").classList.add("hide");
         document.getElementById("icono-sonido").classList.remove("hide");
     }
