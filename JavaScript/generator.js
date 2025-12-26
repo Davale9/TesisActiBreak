@@ -807,6 +807,8 @@ function actualizarCronometroGeneral() {
 function generarRutinaDesdeHistorial(rutinaGuardada) {
     finalizarRutina();
 
+    audiosAnimos = ejerciciosTodos.filter(e => (e.tipo == "Animo"));
+
     console.log("Cargando rutina desde el historial");
     document.getElementById("selector").classList.add("hide");
     document.getElementById("rutina").classList.remove("hide");
